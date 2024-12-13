@@ -1,4 +1,4 @@
-# Toy Tank Royale Dev
+# Toy Tank Royale
 A multi-player Minecraft: Java Edition game where you battle your friends with cute little tanks.
 
 ## Installation
@@ -14,6 +14,10 @@ This repository is the world file containing everything needed to play the map. 
 - Demonstration with 63 bots: https://youtu.be/t5iGQdEGn44
 - Realms blog post: https://www.minecraft.net/en-us/article/new-on-realms-being-nice-to-people
 
-## Toy Turtle Royale
+# Toy Turtle Royale
 On Minecraft Realms, this game is known as "Toy Turtle Royale" to comply with Mojang's guidelines. All tank assets in this version are replaced with turtles.
 To enable or disable turtle mode, edit `datapacks/ttr/data/ttr/function/config`
+
+# Toy Tank Royale Unity
+There is also a (currently unfinished) re-make of Toy Tank Royale on itch.io. It can be played over LAN or online through port-forwarding. This was made for my senior capstone project in university.
+https://flamingosaurus.itch.io/toy-tank-royale
