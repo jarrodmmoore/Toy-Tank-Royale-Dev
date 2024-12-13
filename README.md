@@ -16,4 +16,4 @@ This repository is the world file containing everything needed to play the map. 
 
 ## Toy Turtle Royale
 On Minecraft Realms, this game is known as "Toy Turtle Royale" to comply with Mojang's guidelines. All tank assets in this version are replaced with turtles.
-To enable or disable turtle mode, edit datapacks/ttr/data/ttr/function/config
+To enable or disable turtle mode, edit `datapacks/ttr/data/ttr/function/config`
