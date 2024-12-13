@@ -1,0 +1,9 @@
+execute if entity @s[scores={aiShootImpulse=1}] run function ttr:shoot/shoot_basic_pellet
+execute if entity @s[scores={aiShootImpulse=2}] run function ttr:shoot/shoot_homing_pellet
+execute if entity @s[scores={aiShootImpulse=3}] run function ttr:shoot/shoot_burst_pellet
+execute if entity @s[scores={aiShootImpulse=4}] run function ttr:shoot/shoot_super_pellet
+execute if entity @s[scores={aiShootImpulse=5}] run function ttr:shoot/shoot_triple_pellet
+execute if entity @s[scores={aiShootImpulse=6}] run function ttr:shoot/deploy_mine
+execute if entity @s[scores={aiShootImpulse=7}] run function ttr:shoot/deploy_mine_remote_try
+execute if entity @s[scores={aiShootImpulse=8}] run function ttr:shoot/sonic_blast
+execute if entity @s[scores={aiShootImpulse=9}] run function ttr:shoot/tank_dash

@@ -1,0 +1,9 @@
+execute if score #area_1_sp_nav value matches 1.. as @e[type=marker,tag=a1] at @s run fill ~ ~-6 ~ ~20 ~-6 ~20 black_concrete
+execute if score #area_2_sp_nav value matches 1.. as @e[type=marker,tag=a2] at @s run fill ~ ~-6 ~ ~20 ~-6 ~20 black_concrete
+execute if score #area_3_sp_nav value matches 1.. as @e[type=marker,tag=a3] at @s run fill ~ ~-6 ~ ~20 ~-6 ~20 black_concrete
+execute if score #area_4_sp_nav value matches 1.. as @e[type=marker,tag=a4] at @s run fill ~ ~-6 ~ ~20 ~-6 ~20 black_concrete
+execute if score #area_5_sp_nav value matches 1.. as @e[type=marker,tag=a5] at @s run fill ~ ~-6 ~ ~20 ~-6 ~20 black_concrete
+execute if score #area_6_sp_nav value matches 1.. as @e[type=marker,tag=a6] at @s run fill ~ ~-6 ~ ~20 ~-6 ~20 black_concrete
+execute if score #area_7_sp_nav value matches 1.. as @e[type=marker,tag=a7] at @s run fill ~ ~-6 ~ ~20 ~-6 ~20 black_concrete
+execute if score #area_8_sp_nav value matches 1.. as @e[type=marker,tag=a8] at @s run fill ~ ~-6 ~ ~20 ~-6 ~20 black_concrete
+execute if score #area_9_sp_nav value matches 1.. as @e[type=marker,tag=a9] at @s run fill ~ ~-6 ~ ~20 ~-6 ~20 black_concrete

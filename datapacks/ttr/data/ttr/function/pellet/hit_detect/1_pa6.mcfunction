@@ -1,0 +1,2 @@
+execute positioned ~ ~.85 ~ if entity @e[tag=pa6,distance=..1,tag=p_can_hit,tag=pellet,type=armor_stand,tag=!p_self] run function ttr:pellet/hit_detect/1_confirm_target1_pa6
+execute positioned ~ ~.18 ~ if entity @e[tag=pa6,distance=..1,tag=p_can_hit,type=zombie,tag=player_char,tag=!p_self,tag=!player_ded] run function ttr:pellet/hit_detect/1_confirm_target2_pa6

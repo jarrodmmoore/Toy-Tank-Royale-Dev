@@ -1,0 +1,22 @@
+#look for openings in the south wall
+#execute positioned ~ ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~1 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~2 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~3 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~4 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~5 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~6 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~7 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~8 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~9 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~10 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~11 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~12 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~13 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~14 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~15 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~16 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~17 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~18 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+execute positioned ~19 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south
+#execute positioned ~20 ~1 ~21 if block ~ ~ ~ #ttr:ai_nav positioned ~ ~-5 ~-1 run function ttr:ai/nav_generate/block/south

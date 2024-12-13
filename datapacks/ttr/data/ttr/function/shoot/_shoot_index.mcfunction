@@ -1,0 +1,9 @@
+execute if items entity @s weapon.mainhand *[custom_data~{slot0:1b}] run function ttr:shoot/shoot_basic_pellet
+execute if items entity @s weapon.mainhand *[custom_data~{slot1:1b}] run function ttr:shoot/shoot_homing_pellet
+execute if items entity @s weapon.mainhand *[custom_data~{slot2:1b}] run function ttr:shoot/shoot_burst_pellet
+execute if items entity @s weapon.mainhand *[custom_data~{slot3:1b}] run function ttr:shoot/shoot_super_pellet
+execute if items entity @s weapon.mainhand *[custom_data~{slot4:1b}] run function ttr:shoot/shoot_triple_pellet
+execute if items entity @s weapon.mainhand *[custom_data~{slot5:1b}] run function ttr:shoot/deploy_mine
+execute if items entity @s weapon.mainhand *[custom_data~{slot6:1b}] run function ttr:shoot/deploy_mine_remote_try
+execute if items entity @s weapon.mainhand *[custom_data~{slot7:1b}] run function ttr:shoot/sonic_blast
+execute if items entity @s weapon.mainhand *[custom_data~{slot8:1b}] run function ttr:shoot/tank_dash

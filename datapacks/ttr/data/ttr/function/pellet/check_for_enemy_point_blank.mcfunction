@@ -1,0 +1,9 @@
+execute if entity @s[tag=pa1] run function ttr:pellet/point_blank/check_for_enemy_point_blank_1
+execute if entity @s[tag=pa2] run function ttr:pellet/point_blank/check_for_enemy_point_blank_2
+execute if entity @s[tag=pa3] run function ttr:pellet/point_blank/check_for_enemy_point_blank_3
+execute if entity @s[tag=pa4] run function ttr:pellet/point_blank/check_for_enemy_point_blank_4
+execute if entity @s[tag=pa5] run function ttr:pellet/point_blank/check_for_enemy_point_blank_5
+execute if entity @s[tag=pa6] run function ttr:pellet/point_blank/check_for_enemy_point_blank_6
+execute if entity @s[tag=pa7] run function ttr:pellet/point_blank/check_for_enemy_point_blank_7
+execute if entity @s[tag=pa8] run function ttr:pellet/point_blank/check_for_enemy_point_blank_8
+execute if entity @s[tag=pa9] run function ttr:pellet/point_blank/check_for_enemy_point_blank_9

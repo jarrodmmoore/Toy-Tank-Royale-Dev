@@ -1,0 +1,2 @@
+execute if score @s universalCoins > #coins_highest value run scoreboard players operation #royal_ID value = @s playerID
+execute if score @s universalCoins > #coins_highest value run scoreboard players operation #coins_highest value = @s universalCoins

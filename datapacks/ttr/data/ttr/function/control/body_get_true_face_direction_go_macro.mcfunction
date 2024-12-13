@@ -1,0 +1,1 @@
+$execute at @s facing $(bodyRemX1).$(bodyRemX2) ~ $(bodyRemZ1).$(bodyRemZ2) rotated ~180 0 run tp @s ~ ~ ~ ~ ~

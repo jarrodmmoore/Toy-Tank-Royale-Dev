@@ -1,0 +1,9 @@
+execute if block ~ 12 ~ orange_wool run scoreboard players add #area_1 value 1
+execute if block ~ 13 ~ magenta_wool run scoreboard players add #area_2 value 1
+execute if block ~ 12 ~ light_blue_wool run scoreboard players add #area_3 value 1
+execute if block ~ 11 ~ yellow_wool run scoreboard players add #area_4 value 1
+execute if block ~ 14 ~ lime_wool run scoreboard players add #area_5 value 1
+execute if block ~ 11 ~ pink_wool run scoreboard players add #area_6 value 1
+execute if block ~ 12 ~ gray_wool run scoreboard players add #area_7 value 1
+execute if block ~ 13 ~ light_gray_wool run scoreboard players add #area_8 value 1
+execute if block ~ 12 ~ cyan_wool run scoreboard players add #area_9 value 1

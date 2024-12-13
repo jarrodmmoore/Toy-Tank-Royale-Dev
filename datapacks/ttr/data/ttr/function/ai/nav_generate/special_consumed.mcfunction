@@ -1,0 +1,9 @@
+execute if block ~ 9 ~ white_concrete run scoreboard players set #area_1_sp_nav value 0
+execute if block ~ 9 ~ orange_concrete run scoreboard players set #area_2_sp_nav value 0
+execute if block ~ 9 ~ magenta_concrete run scoreboard players set #area_3_sp_nav value 0
+execute if block ~ 9 ~ light_blue_concrete run scoreboard players set #area_4_sp_nav value 0
+execute if block ~ 9 ~ yellow_concrete run scoreboard players set #area_5_sp_nav value 0
+execute if block ~ 9 ~ lime_concrete run scoreboard players set #area_6_sp_nav value 0
+execute if block ~ 9 ~ pink_concrete run scoreboard players set #area_7_sp_nav value 0
+execute if block ~ 9 ~ gray_concrete run scoreboard players set #area_8_sp_nav value 0
+execute if block ~ 9 ~ light_gray_concrete run scoreboard players set #area_9_sp_nav value 0
