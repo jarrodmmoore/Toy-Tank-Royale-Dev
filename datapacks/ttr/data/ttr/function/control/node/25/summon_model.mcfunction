@@ -11,25 +11,9 @@ scoreboard players operation @s tankHeadModel = #headModel value
 
 kill 00000019-0000-0000-0000-000000000002
 
-execute unless entity @s[scores={color_1=1..8}] run summon minecraft:armor_stand ~ ~-1 ~ {UUID:[I;25,0,0,2],Tags:["player_model"],Rotation:[0.0f],DisabledSlots:4144959,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Glowing:0b,ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":1111111}}]}
-execute if entity @s[scores={color_1=1}] run summon minecraft:armor_stand ~ ~-1 ~ {UUID:[I;25,0,0,2],Tags:["player_model"],Rotation:[0.0f],DisabledSlots:4144959,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Glowing:0b,ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":1111111}}]}
-execute if entity @s[scores={color_1=2}] run summon minecraft:armor_stand ~ ~-1 ~ {UUID:[I;25,0,0,2],Tags:["player_model"],Rotation:[0.0f],DisabledSlots:4144959,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Glowing:0b,ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":2111111}}]}
-execute if entity @s[scores={color_1=3}] run summon minecraft:armor_stand ~ ~-1 ~ {UUID:[I;25,0,0,2],Tags:["player_model"],Rotation:[0.0f],DisabledSlots:4144959,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Glowing:0b,ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":3111111}}]}
-execute if entity @s[scores={color_1=4}] run summon minecraft:armor_stand ~ ~-1 ~ {UUID:[I;25,0,0,2],Tags:["player_model"],Rotation:[0.0f],DisabledSlots:4144959,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Glowing:0b,ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":4111111}}]}
-execute if entity @s[scores={color_1=5}] run summon minecraft:armor_stand ~ ~-1 ~ {UUID:[I;25,0,0,2],Tags:["player_model"],Rotation:[0.0f],DisabledSlots:4144959,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Glowing:0b,ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":5111111}}]}
-execute if entity @s[scores={color_1=6}] run summon minecraft:armor_stand ~ ~-1 ~ {UUID:[I;25,0,0,2],Tags:["player_model"],Rotation:[0.0f],DisabledSlots:4144959,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Glowing:0b,ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":6111111}}]}
-execute if entity @s[scores={color_1=7}] run summon minecraft:armor_stand ~ ~-1 ~ {UUID:[I;25,0,0,2],Tags:["player_model"],Rotation:[0.0f],DisabledSlots:4144959,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Glowing:0b,ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":7111111}}]}
-execute if entity @s[scores={color_1=8}] run summon minecraft:armor_stand ~ ~-1 ~ {UUID:[I;25,0,0,2],Tags:["player_model"],Rotation:[0.0f],DisabledSlots:4144959,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Glowing:0b,ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":8111111}}]}
-
-#override model if we're supposed to be a turtle
-execute if entity @s[scores={color_1=1,tankBodyModel=1}] as 00000019-0000-0000-0000-000000000002 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":1111112}}]}
-execute if entity @s[scores={color_1=2,tankBodyModel=1}] as 00000019-0000-0000-0000-000000000002 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":2111112}}]}
-execute if entity @s[scores={color_1=3,tankBodyModel=1}] as 00000019-0000-0000-0000-000000000002 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":3111112}}]}
-execute if entity @s[scores={color_1=4,tankBodyModel=1}] as 00000019-0000-0000-0000-000000000002 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":4111112}}]}
-execute if entity @s[scores={color_1=5,tankBodyModel=1}] as 00000019-0000-0000-0000-000000000002 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":5111112}}]}
-execute if entity @s[scores={color_1=6,tankBodyModel=1}] as 00000019-0000-0000-0000-000000000002 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":6111112}}]}
-execute if entity @s[scores={color_1=7,tankBodyModel=1}] as 00000019-0000-0000-0000-000000000002 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":7111112}}]}
-execute if entity @s[scores={color_1=8,tankBodyModel=1}] as 00000019-0000-0000-0000-000000000002 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:yellow_dye",count:1,components:{"minecraft:custom_model_data":8111112}}]}
+#summon model
+summon minecraft:armor_stand ~ ~-1 ~ {UUID:[I;25,0,0,2],Tags:["player_model"],Rotation:[0.0f,0.0f],DisabledSlots:4144959,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Glowing:0b}
+execute as 00000019-0000-0000-0000-000000000002 run function ttr:control/body_get_model
 
 execute unless entity @s[scores={color_1=2..8}] run team join color_green 00000019-0000-0000-0000-000000000002
 execute if entity @s[scores={color_1=2}] run team join color_red 00000019-0000-0000-0000-000000000002
