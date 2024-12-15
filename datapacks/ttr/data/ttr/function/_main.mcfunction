@@ -1,5 +1,4 @@
 #MAIN
-#(this is where babies come from)
 
 
 #integrate players once they join the world

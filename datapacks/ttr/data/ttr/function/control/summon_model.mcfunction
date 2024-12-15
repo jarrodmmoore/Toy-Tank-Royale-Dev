@@ -1,8 +1,3 @@
-#character model is purely visual, "summon_character.mcfunction" creates our collision hull that actually does things
-
-#why is our player made up of two different entities?
-#well, it allows for more control over animation and the visual rotation of the character without making any sacrifices to the smoothness of its true motion
-#also allows us to do stuff like offsetting the model
 
 scoreboard players operation @s color_1 = #color1 value
 scoreboard players operation @s color_2 = #color2 value

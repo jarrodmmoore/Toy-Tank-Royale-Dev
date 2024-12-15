@@ -22,3 +22,13 @@ execute if score #headModel value matches 1 if score #color2 value matches 5 run
 execute if score #headModel value matches 1 if score #color2 value matches 6 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:green_dye",count:1,components:{"minecraft:item_model":"ttr/turtles/head_pink"}}]}
 execute if score #headModel value matches 1 if score #color2 value matches 7 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:green_dye",count:1,components:{"minecraft:item_model":"ttr/turtles/head_cyan"}}]}
 execute if score #headModel value matches 1 if score #color2 value matches 8 run data merge entity @s {ArmorItems:[{},{},{},{id:"minecraft:green_dye",count:1,components:{"minecraft:item_model":"ttr/turtles/head_gray"}}]}
+
+#get team color
+execute unless score #color2 value matches 1..8 run team join color_green @s
+execute if score #color2 value matches 2 run team join color_red @s
+execute if score #color2 value matches 3 run team join color_blue @s
+execute if score #color2 value matches 4 run team join color_yellow @s
+execute if score #color2 value matches 5 run team join color_white @s
+execute if score #color2 value matches 6 run team join color_pink @s
+execute if score #color2 value matches 7 run team join color_cyan @s
+execute if score #color2 value matches 8 run team join color_gray @s
