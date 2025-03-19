@@ -25,9 +25,9 @@ scoreboard players reset § alive
 scoreboard players reset §§ alive
 team join sidebar_red §
 
-execute unless score #force_turtles value matches 1 run team modify sidebar_red prefix ["",{"text":"\ue009","color":"white"}]
-execute if score #force_turtles value matches 1 run team modify sidebar_red prefix ["",{"text":"\ue034","color":"white"}]
+execute unless score #force_turtles value matches 1 run team modify sidebar_red prefix ["",{text:"\ue009",color:"white"}]
+execute if score #force_turtles value matches 1 run team modify sidebar_red prefix ["",{text:"\ue034",color:"white"}]
 
 scoreboard players set #opt_permadeath value 0
 
-bossbar set tank_bbar name ["",{"translate":"ttr.game_starting_soon","bold":true}]
+bossbar set tank_bbar name ["",{translate:"ttr.game_starting_soon",bold:true}]

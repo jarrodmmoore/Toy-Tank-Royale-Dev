@@ -10,7 +10,7 @@ kill @e[tag=pellet]
 #regenerate nav vector fields for ai
 execute if score #ai_count value matches 1.. run function ttr:ai/nav_generate/start_over
 
-bossbar set tank_bbar name ["",{"translate":"ttr.playing_to_x_captures","bold":true,"with":[{"score":{"name":"#opt_capturelimit","objective":"value"}}]}]
+bossbar set tank_bbar name ["",{translate:"ttr.playing_to_x_captures",bold:true,with:[{score:{name:"#opt_capturelimit",objective:"value"}}]}]
 
 scoreboard players set #celebration_time value 0
 

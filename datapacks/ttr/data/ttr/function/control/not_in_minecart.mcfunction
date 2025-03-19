@@ -48,7 +48,7 @@ gamemode adventure @s[gamemode=!adventure]
 scoreboard players add @s afkTime 1
 execute if entity @s[scores={afkTime=400..}] run function ttr:game/abandon_game
 
-#title @s subtitle ["",{"translate":"ttr.game.hold_rmb_to_enter_game","color":"white","with":[{"keybind":"key.use","color":"#55FF77"}]}]
+#title @s subtitle ["",{translate:"ttr.game.hold_rmb_to_enter_game",color:"white",with:[{keybind:"key.use",color:"#55FF77"}]}]
 title @s subtitle [""]
 title @s title [""]
 title @s actionbar [""]

@@ -3,10 +3,10 @@ scoreboard players set #time_remaining value 0
 
 scoreboard players add #celebration_time value 1
 
-execute if score #celebration_time value matches 1 run tellraw @a ["",{"text":"\n"},{"translate":"ttr.game_ended","bold":true,"color":"green"}]
-execute if score #celebration_time value matches 1 run execute as @a[tag=inControl] unless score @s deathTime matches 1.. run tellraw @a [{"translate":"ttr.player_wins","color":"white","bold":false,"with":[{"selector":"@s"}]}]
-execute if score #celebration_time value matches 1 run execute as @e[tag=ai,tag=!player_ded] run tellraw @a [{"translate":"ttr.player_wins","color":"white","bold":false,"with":[{"selector":"@s"}]}]
-execute if score #celebration_time value matches 1 run tellraw @a ["",{"text":" "}]
+execute if score #celebration_time value matches 1 run tellraw @a ["",{text:"\n"},{translate:"ttr.game_ended",bold:true,color:"green"}]
+execute if score #celebration_time value matches 1 run execute as @a[tag=inControl] unless score @s deathTime matches 1.. run tellraw @a [{translate:"ttr.player_wins",color:"white",bold:false,with:[{selector:"@s"}]}]
+execute if score #celebration_time value matches 1 run execute as @e[tag=ai,tag=!player_ded] run tellraw @a [{translate:"ttr.player_wins",color:"white",bold:false,with:[{selector:"@s"}]}]
+execute if score #celebration_time value matches 1 run tellraw @a ["",{text:" "}]
 
 #fireworks
 execute if score #celebration_time value matches 1 as @e[type=zombie,tag=player_char,tag=!player_ded] at @s run summon firework_rocket ~ ~1 ~ {LifeTime:20,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:1b,explosions:[{shape:"small_ball",colors:[I;16777215],has_trail:1b}]}}}}

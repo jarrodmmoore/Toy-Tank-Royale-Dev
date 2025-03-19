@@ -15,4 +15,4 @@ scoreboard players operation @s z_vel *= #1000 value
 scoreboard players operation @s z_vel /= #1748 value
 
 #debug
-#tellraw @s ["",{"text":"x_vel = "},{"score":{"name":"@s","objective":"x_vel"}}]
+#tellraw @s ["",{text:"x_vel = "},{score:{name:"@s",objective:"x_vel"}}]

@@ -73,11 +73,11 @@ execute if score #force_turtles value matches 1 run scoreboard players set @s ta
 
 execute at @s run playsound minecraft:entity.iron_golem.repair master @s ~ ~100000 ~ 1000000 1.9
 
-execute if score #opt_teams value matches 1 if entity @s[tag=redTeam] run tellraw @a[tag=inControl,scores={shutUp=..0}] ["",{"translate":"ttr.game.joined_red_team","color":"red","with":[{"selector":"@s"}]}]
-execute if score #opt_teams value matches 1 if entity @s[tag=blueTeam] run tellraw @a[tag=inControl,scores={shutUp=..0}] ["",{"translate":"ttr.game.joined_blue_team","color":"blue","with":[{"selector":"@s"}]}]
+execute if score #opt_teams value matches 1 if entity @s[tag=redTeam] run tellraw @a[tag=inControl,scores={shutUp=..0}] ["",{translate:"ttr.game.joined_red_team",color:"red",with:[{selector:"@s"}]}]
+execute if score #opt_teams value matches 1 if entity @s[tag=blueTeam] run tellraw @a[tag=inControl,scores={shutUp=..0}] ["",{translate:"ttr.game.joined_blue_team",color:"blue",with:[{selector:"@s"}]}]
 
 #message disabled. too much clutter!
-#tellraw @s ["",{"translate":"ttr.game.get_ready","color":"#66FF88"}]
+#tellraw @s ["",{translate:"ttr.game.get_ready",color:"#66FF88"}]
 
 #recalculate team balance NOW! it's possible that multiple players may check team balance on the same tick.
 function ttr:game/team_availability

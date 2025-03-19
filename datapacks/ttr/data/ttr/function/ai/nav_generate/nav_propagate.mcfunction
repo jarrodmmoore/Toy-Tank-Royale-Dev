@@ -10,7 +10,7 @@ execute positioned ~1 ~ ~1 if block ~ ~ ~ black_concrete if block ~-1 30 ~ #ttr:
 
 #debug
 #scoreboard players add #testvalue value 1
-#tellraw @a ["",{"text":"nav block generated -> "},{"score":{"name":"#testvalue","objective":"value"}}]
+#tellraw @a ["",{text:"nav block generated -> "},{score:{name:"#testvalue",objective:"value"}}]
 
 #good job
 kill @s

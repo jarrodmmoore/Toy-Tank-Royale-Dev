@@ -43,12 +43,12 @@ tag @s remove inControl
 scoreboard players set @s inputCooldown 0
 
 #hello
-tellraw @s ["",{"text":" "}]
-execute unless score #force_turtles value matches 1 run tellraw @s ["",{"text":"Welcome to Toy Tank Royale!","color":"#55FF77","bold":true}]
-execute if score #force_turtles value matches 1 run tellraw @s ["",{"text":"Welcome to Toy Turtle Royale!","color":"#55FF77","bold":true}]
-tellraw @s ["",{"text":"Read your guidebook to see your objective as well as available commands. "}]
-execute unless entity @a[tag=inControl] run tellraw @s ["",{"text":"Type ","color":"gray"},{"text":"/trigger gameOptions","color":"aqua"},{"text":" to change game settings.","color":"gray"}]
-tellraw @s ["",{"text":" "}]
+tellraw @s ["",{text:" "}]
+execute unless score #force_turtles value matches 1 run tellraw @s ["",{text:"Welcome to Toy Tank Royale!",color:"#55FF77",bold:true}]
+execute if score #force_turtles value matches 1 run tellraw @s ["",{text:"Welcome to Toy Turtle Royale!",color:"#55FF77",bold:true}]
+tellraw @s ["",{text:"Read your guidebook to see your objective as well as available commands. "}]
+execute unless entity @a[tag=inControl] run tellraw @s ["",{text:"Type ",color:"gray"},{text:"/trigger gameOptions",color:"aqua"},{text:" to change game settings.",color:"gray"}]
+tellraw @s ["",{text:" "}]
 
 #various housekeeping things...
 stopsound @s

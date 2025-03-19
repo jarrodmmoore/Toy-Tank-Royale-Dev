@@ -1,5 +1,5 @@
 #bossbars
-bossbar add tank_bbar ["",{"text":"tankbbar"}]
+bossbar add tank_bbar ["",{text:"tankbbar"}]
 
 #scoreboard objectives
 scoreboard objectives add carrotInput minecraft.used:minecraft.carrot_on_a_stick
@@ -99,11 +99,11 @@ scoreboard objectives add math2 dummy
 scoreboard objectives add value dummy
 
 scoreboard objectives add coins dummy
-scoreboard objectives modify coins displayname ["",{"translate":"ttr.display.coins","color":"white","bold":true}]
+scoreboard objectives modify coins displayname ["",{translate:"ttr.display.coins",color:"white",bold:true}]
 scoreboard objectives add points dummy
-scoreboard objectives modify points displayname ["",{"translate":"ttr.display.points","color":"white","bold":true}]
+scoreboard objectives modify points displayname ["",{translate:"ttr.display.points",color:"white",bold:true}]
 scoreboard objectives add alive dummy
-scoreboard objectives modify alive displayname ["",{"translate":"ttr.display.alive","color":"white","bold":true}]
+scoreboard objectives modify alive displayname ["",{translate:"ttr.display.alive",color:"white",bold:true}]
 scoreboard objectives add teamDisplay dummy
 scoreboard objectives add addCoins dummy
 
@@ -233,7 +233,7 @@ team add nocollide
 team modify nocollide color gold
 team modify nocollide collisionRule never
 team modify nocollide seeFriendlyInvisibles false
-team modify nocollide prefix ["",{"text":"\uE010 ","color":"white"}]
+team modify nocollide prefix ["",{text:"\uE010 ",color:"white"}]
 
 team add color_green
 team modify color_green color dark_green

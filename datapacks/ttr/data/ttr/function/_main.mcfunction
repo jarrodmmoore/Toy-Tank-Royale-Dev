@@ -135,7 +135,7 @@ tag @e[tag=hitThisTick] remove hitThisTick
 #show a scoreboard value, always
 #scoreboard players set @a actionbarState 99999
 #scoreboard players set @a actionbarTime 3
-#title @a actionbar ["",{"text":"level_gen_time = "},{"score":{"name":"#level_gen_time","objective":"value"}}]
+#title @a actionbar ["",{text:"level_gen_time = "},{score:{name:"#level_gen_time",objective:"value"}}]
 
 #test navigation vector fields by looking straight down in a direction
 #execute as @a[tag=nav_check] at @s run function ttr:misc/debug_try_nav_start

@@ -24,7 +24,7 @@ function ttr:random/level_gen/default_setup_one_only
 scoreboard players set #elim_progress value 0
 
 #message!
-tellraw @a[scores={shutUp=..0}] ["",{"text":"\n"},{"translate":"ttr.announce_sudden_death","bold":true,"color":"red"},{"text":"\n"},{"translate":"ttr.about_sudden_death","bold":false,"color":"white"},{"text":"\n"}]
+tellraw @a[scores={shutUp=..0}] ["",{text:"\n"},{translate:"ttr.announce_sudden_death",bold:true,color:"red"},{text:"\n"},{translate:"ttr.about_sudden_death",bold:false,color:"white"},{text:"\n"}]
 execute as @a at @s run playsound minecraft:entity.ender_dragon.growl master @s ~ 1000000 ~ 1000000 1.5
 
 scoreboard players set #time_remaining value 1200

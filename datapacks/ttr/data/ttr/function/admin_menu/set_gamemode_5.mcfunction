@@ -16,7 +16,7 @@ execute as @a[tag=inGame] if score @s shutUp matches ..0 run function ttr:contro
 
 function ttr:gamemodes/5_setup
 
-scoreboard objectives modify teamDisplay displayname ["",{"translate":"ttr.display.team_coins","color":"white","bold":true}]
+scoreboard objectives modify teamDisplay displayname ["",{translate:"ttr.display.team_coins",color:"white",bold:true}]
 
 function ttr:admin_menu/_open_gamemode
 

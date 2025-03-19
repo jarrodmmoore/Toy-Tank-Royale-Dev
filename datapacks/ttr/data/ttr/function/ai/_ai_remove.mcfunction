@@ -5,7 +5,7 @@ execute as @e[tag=ai,type=zombie] if score @s playerID = #ai_ID value run tag @s
 scoreboard players remove #ai_ID value 1
 scoreboard players remove #ai_count value 1
 
-tellraw @a[tag=inControl,scores={shutUp=..0}] ["",{"translate":"ttr.game.ai_left_game","color":"#66FF88","with":[{"selector":"@e[tag=ai,tag=ai_goodbye]"}]}]
+tellraw @a[tag=inControl,scores={shutUp=..0}] ["",{translate:"ttr.game.ai_left_game",color:"#66FF88",with:[{selector:"@e[tag=ai,tag=ai_goodbye]"}]}]
 
 kill @e[tag=ai,tag=ai_goodbye]
 tag @e[tag=ai_goodbye] remove ai_goodbye

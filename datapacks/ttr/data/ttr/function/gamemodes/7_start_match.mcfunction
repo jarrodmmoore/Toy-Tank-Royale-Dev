@@ -43,4 +43,4 @@ function ttr:random/level_gen/shuffled_setup
 scoreboard players set #infect_progress value 0
 
 #message!
-tellraw @a[scores={shutUp=..0}] ["",{"text":"\n"},{"translate":"ttr.round_started","bold":true},{"text":"\n"},{"translate":"ttr.good_luck","bold":false},{"text":"\n"}]
+tellraw @a[scores={shutUp=..0}] ["",{text:"\n"},{translate:"ttr.round_started",bold:true},{text:"\n"},{translate:"ttr.good_luck",bold:false},{text:"\n"}]

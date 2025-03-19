@@ -22,7 +22,7 @@ execute if score @s cosmeticSet1 matches 1.. run tag @s add hasCustomColors
 execute if score @s cosmeticSet2 matches 1.. run tag @s add hasCustomColors
 scoreboard players set #global recursions 0
 execute if score #opt_teams value matches 0 if entity @s[tag=need_color] if entity @s[tag=hasCustomColors] run function ttr:game/colors/try_custom_colors
-execute if score #opt_teams value matches 0 if entity @s[type=player,tag=need_color,tag=hasCustomColors] run tellraw @s ["",{"translate":"ttr.hotbar.paint_job.cannot_apply","color":"red","italic":true}]
+execute if score #opt_teams value matches 0 if entity @s[type=player,tag=need_color,tag=hasCustomColors] run tellraw @s ["",{translate:"ttr.hotbar.paint_job.cannot_apply",color:"red",italic:true}]
 execute if entity @s[tag=need_color] run tag @s remove hasCustomColors
 
 #try and get a solid color first
@@ -50,7 +50,7 @@ execute if score #opt_teams value matches 1 if entity @s[tag=need_color] unless 
 #neutral -- use custom paint job is we specified one
 scoreboard players set #global recursions 0
 execute if score #opt_teams value matches 1 if entity @s[tag=need_color] if entity @s[tag=hasCustomColors] run function ttr:game/colors/try_custom_colors_teams
-execute if score #opt_teams value matches 1 if entity @s[type=player,tag=need_color,tag=hasCustomColors] run tellraw @s ["",{"translate":"ttr.hotbar.paint_job.cannot_apply","color":"red","italic":true}]
+execute if score #opt_teams value matches 1 if entity @s[type=player,tag=need_color,tag=hasCustomColors] run tellraw @s ["",{translate:"ttr.hotbar.paint_job.cannot_apply",color:"red",italic:true}]
 execute if entity @s[tag=need_color] run tag @s remove hasCustomColors
 
 #neutral team gets a random mixed-color tank (can't have any red or blue)
@@ -59,8 +59,8 @@ execute if score #opt_teams value matches 1 if entity @s[tag=need_color] if enti
 ########
 
 
-#tellraw @a ["",{"text":"[DEV] Tank base color is "},{"score":{"name":"@s","objective":"color_1"}}]
-#tellraw @a ["",{"text":"[DEV] Tank head color is "},{"score":{"name":"@s","objective":"color_2"}}]
+#tellraw @a ["",{text:"[DEV] Tank base color is "},{score:{name:"@s",objective:"color_1"}}]
+#tellraw @a ["",{text:"[DEV] Tank head color is "},{score:{name:"@s",objective:"color_2"}}]
 
 tag @s remove need_color
 

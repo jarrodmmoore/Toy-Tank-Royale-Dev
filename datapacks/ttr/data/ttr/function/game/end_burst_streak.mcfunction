@@ -1,2 +1,2 @@
 #bye felicia
-execute if entity @s[scores={burstStreak=5..}] run tellraw @a[scores={shutUp=..0}] ["",{"text":" "},{"translate":"ttr.game.burst_streak_ended","italic":true,"with":[{"selector":"@s","italic":true},{"text":"(","color":"green","italic":false},{"score":{"name":"@s","objective":"burstStreak"},"color":"green","italic":false},{"text":")","color":"green","italic":false}]}]
+execute if entity @s[scores={burstStreak=5..}] run tellraw @a[scores={shutUp=..0}] ["",{text:" "},{translate:"ttr.game.burst_streak_ended",italic:true,with:[{selector:"@s",italic:true},{text:"(",color:"green",italic:false},{score:{name:"@s",objective:"burstStreak"},color:"green",italic:false},{text:")",color:"green",italic:false}]}]

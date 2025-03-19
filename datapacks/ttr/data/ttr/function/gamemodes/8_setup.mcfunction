@@ -24,12 +24,12 @@ scoreboard players reset § alive
 scoreboard players reset §§ alive
 team join sidebar_red §
 
-team modify sidebar_red prefix ["",{"translate":"ttr.menu.ai.red","color":"red"}]
-team modify sidebar_blue prefix ["",{"translate":"ttr.menu.ai.blue","color":"blue"}]
+team modify sidebar_red prefix ["",{translate:"ttr.menu.ai.red",color:"red"}]
+team modify sidebar_blue prefix ["",{translate:"ttr.menu.ai.blue",color:"blue"}]
 
 scoreboard players set #opt_permadeath value 0
 
-bossbar set tank_bbar name ["",{"translate":"ttr.game_starting_soon","bold":true}]
+bossbar set tank_bbar name ["",{translate:"ttr.game_starting_soon",bold:true}]
 
 #set up the arena
 execute as @a[tag=inControl] run function ttr:game/abandon_game

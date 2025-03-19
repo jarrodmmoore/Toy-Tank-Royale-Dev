@@ -1,4 +1,4 @@
-summon armor_stand ^ ^ ^.5 {NoGravity:1b,Invulnerable:1b,Small:0b,Invisible:1b,NoBasePlate:1b,Tags:["setme","pellet","burst_pellet","p_can_hit","p_can_pop","dont_spawn_here"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:magenta_dye",count:1,components:{"minecraft:item_model":"ttr/projectiles/burst_pellet"}}]}
+summon armor_stand ^ ^ ^.5 {NoGravity:1b,Invulnerable:1b,Small:0b,Invisible:1b,NoBasePlate:1b,Tags:["setme","pellet","burst_pellet","p_can_hit","p_can_pop","dont_spawn_here"],DisabledSlots:4144959,equipment:{head:{id:"minecraft:magenta_dye",count:1,components:{"minecraft:item_model":"ttr/projectiles/burst_pellet"}}}}
 
 scoreboard players remove @s[scores={hasItem3=1..}] hasItem3 1
 clear @s[type=player] magenta_dye 1

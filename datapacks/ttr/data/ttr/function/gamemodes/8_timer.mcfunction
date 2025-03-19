@@ -15,7 +15,7 @@ scoreboard players operation #timeSec value /= #20 value
 function ttr:gamemodes/timer_sort
 
 #show time on bossbar
-bossbar set tank_bbar name ["",{"translate":"ttr.time_remaining","bold":true,"color":"white"},{"score":{"name":"#timeMin","objective":"value"},"bold":true,"color":"white"},{"text":":","bold":true,"color":"white"},{"score":{"name":"#timeSec10","objective":"value"},"bold":true,"color":"white"},{"score":{"name":"#timeSec","objective":"value"},"bold":true,"color":"white"}]
+bossbar set tank_bbar name ["",{translate:"ttr.time_remaining",bold:true,color:"white"},{score:{name:"#timeMin",objective:"value"},bold:true,color:"white"},{text:":",bold:true,color:"white"},{score:{name:"#timeSec10",objective:"value"},bold:true,color:"white"},{score:{name:"#timeSec",objective:"value"},bold:true,color:"white"}]
 
 #time up? end the game
 #execute if score #time_remaining value matches ..0 run scoreboard players set #elim_timeout value 60

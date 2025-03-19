@@ -14,7 +14,7 @@ execute if score #red_player_count value matches 1.. if score #blue_player_count
 scoreboard players set #ready_to_play_ctf value 0
 execute if score #red_player_count value matches 1.. if score #blue_player_count value matches 1.. run scoreboard players set #ready_to_play_ctf value 1
 execute if score #ready_to_play_ctf value matches 0 run bossbar set tank_bbar players @a
-execute if score #ready_to_play_ctf value matches 0 run bossbar set tank_bbar name ["",{"translate":"ttr.game_starting_soon","bold":true}]
+execute if score #ready_to_play_ctf value matches 0 run bossbar set tank_bbar name ["",{translate:"ttr.game_starting_soon",bold:true}]
 execute if score #ready_to_play_ctf value matches 0 store result bossbar tank_bbar value run scoreboard players get #opt_capturelimit value
 
 #flags

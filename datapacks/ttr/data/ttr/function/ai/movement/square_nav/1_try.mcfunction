@@ -19,7 +19,7 @@ execute if score #decision value matches 2 if score #objectiveSquare value match
 execute if score #decision value matches 2 unless score #objectiveSquare value matches 0 if score #objectiveSquare value = #currentSquare value run scoreboard players set #decision value 0
 
 #debug
-#execute if score #decision value matches 2 run tellraw @a ["",{"text":"#objectiveSquare = "},{"score":{"name":"#objectiveSquare","objective":"value"}}]
+#execute if score #decision value matches 2 run tellraw @a ["",{text:"#objectiveSquare = "},{score:{name:"#objectiveSquare",objective:"value"}}]
 
 #now put on the shmoves...
 tag @s add self_shmoves

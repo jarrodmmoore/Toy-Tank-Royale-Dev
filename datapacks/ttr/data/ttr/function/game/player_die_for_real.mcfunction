@@ -56,7 +56,7 @@ execute if score #opt_gamemode value matches 7 unless score #infection_state val
 execute if score #opt_gamemode value matches 7 if score #infection_state value matches 2 if entity @s[tag=redTeam] run playsound minecraft:entity.generic.explode master @a ~ ~10 ~ 5 2
 execute if score #opt_gamemode value matches 7 if score #infection_state value matches 2 if entity @s[tag=redTeam] run playsound minecraft:entity.item.break master @a ~ ~10 ~ 5 .6
 
-title @s subtitle ["",{"translate":"ttr.game.you_died","color":"red","bold":true}]
+title @s subtitle ["",{translate:"ttr.game.you_died",color:"red",bold:true}]
 title @s title [""]
 
 function ttr:game/get_respawn_time

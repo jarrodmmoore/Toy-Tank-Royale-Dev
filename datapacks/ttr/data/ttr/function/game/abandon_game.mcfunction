@@ -43,7 +43,7 @@ scoreboard players reset @s points
 
 execute at @s run playsound minecraft:entity.iron_golem.death master @s ~ ~100000 ~ 1000000 1.9
 
-tellraw @s ["",{"translate":"ttr.game.you_left_the_game","color":"#FF6688"}]
+tellraw @s ["",{translate:"ttr.game.you_left_the_game",color:"#FF6688"}]
 title @s subtitle [""]
 title @s title [""]
 

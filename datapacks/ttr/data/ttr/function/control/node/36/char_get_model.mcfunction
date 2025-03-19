@@ -36,7 +36,7 @@ execute if score #global dCorrect matches 1 as 00000024-0000-0000-0000-000000000
 execute if score #global dCorrect matches 4 as 00000024-0000-0000-0000-000000000002 at @s run tp @s ~ ~ ~ ~ -45
 
 #model is rotated to be in the proper direction
-#execute if entity @s[scores={lastDirection=1}] unless score global oTimer matches 9 as 00000024-0000-0000-0000-000000000002 run data merge entity @s {Rotation:[0.0f]}
+#execute if entity @s[scores={lastDirection=1}] unless score global oTimer matches 9 as 00000024-0000-0000-0000-000000000002 run data merge entity @s {Rotation:[0.0f,0.0f]}
 #execute if entity @s[scores={lastDirection=2}] unless score global oTimer matches 9 as 00000024-0000-0000-0000-000000000002 run data merge entity @s {Rotation:[45.0f]}
 #execute if entity @s[scores={lastDirection=3}] unless score global oTimer matches 9 as 00000024-0000-0000-0000-000000000002 run data merge entity @s {Rotation:[90.0f]}
 #execute if entity @s[scores={lastDirection=4}] unless score global oTimer matches 9 as 00000024-0000-0000-0000-000000000002 run data merge entity @s {Rotation:[135.0f]}

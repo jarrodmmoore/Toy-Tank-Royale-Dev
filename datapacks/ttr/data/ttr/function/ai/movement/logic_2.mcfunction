@@ -23,7 +23,7 @@ execute if score #dx value matches 1.. if score #dz value matches 0 run scoreboa
 execute if score #dx value matches 1.. if score #dz value matches 1.. run scoreboard players set @s inputDir 4
 
 #debug
-#tellraw @a ["",{"text":"dx="},{"score":{"name":"#dx","objective":"value"}},{"text":" dz="},{"score":{"name":"#dz","objective":"value"}},{"text":" inputDir="},{"score":{"name":"@s","objective":"inputDir"}}]
+#tellraw @a ["",{text:"dx="},{score:{name:"#dx",objective:"value"}},{text:" dz="},{score:{name:"#dz",objective:"value"}},{text:" inputDir="},{score:{name:"@s",objective:"inputDir"}}]
 
 #give up if we're stuck on a wall
 execute store result score @s char_xx run data get entity @s Pos[0] 100

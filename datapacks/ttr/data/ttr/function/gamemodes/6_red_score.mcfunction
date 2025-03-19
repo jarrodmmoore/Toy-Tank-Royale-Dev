@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"\n"},{"translate":"ttr.ctf.red_scores","color":"red"},{"text":"\n"}]
+tellraw @a ["",{text:"\n"},{translate:"ttr.ctf.red_scores",color:"red"},{text:"\n"}]
 
 scoreboard players add #red_captures value 1
 

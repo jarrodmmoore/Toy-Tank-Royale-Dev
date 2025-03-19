@@ -8,10 +8,10 @@ execute if score #celebration_time value matches 2 run scoreboard players set #t
 execute if score #celebration_time value matches 2 if score #red_players_alive value > #blue_players_alive value run scoreboard players set #team_winner value 1
 execute if score #celebration_time value matches 2 if score #red_players_alive value < #blue_players_alive value run scoreboard players set #team_winner value 2
 
-execute if score #celebration_time value matches 2 run tellraw @a ["",{"text":"\n"},{"translate":"ttr.game_ended","bold":true,"color":"green"}]
-execute if score #celebration_time value matches 2 if score #team_winner value matches 1 run tellraw @a [{"translate":"ttr.player_wins","color":"white","bold":false,"with":[{"translate":"ttr.red_team","color":"red"}]}]
-execute if score #celebration_time value matches 2 if score #team_winner value matches 2 run tellraw @a [{"translate":"ttr.player_wins","color":"white","bold":false,"with":[{"translate":"ttr.blue_team","color":"blue"}]}]
-execute if score #celebration_time value matches 2 run tellraw @a ["",{"text":" "}]
+execute if score #celebration_time value matches 2 run tellraw @a ["",{text:"\n"},{translate:"ttr.game_ended",bold:true,color:"green"}]
+execute if score #celebration_time value matches 2 if score #team_winner value matches 1 run tellraw @a [{translate:"ttr.player_wins",color:"white",bold:false,with:[{translate:"ttr.red_team",color:"red"}]}]
+execute if score #celebration_time value matches 2 if score #team_winner value matches 2 run tellraw @a [{translate:"ttr.player_wins",color:"white",bold:false,with:[{translate:"ttr.blue_team",color:"blue"}]}]
+execute if score #celebration_time value matches 2 run tellraw @a ["",{text:" "}]
 
 #fireworks
 execute if score #celebration_time value matches 2 if score #team_winner value matches 1 as @e[type=zombie,tag=redTeam,tag=!player_ded,limit=1,sort=random] at @s run summon firework_rocket ~ ~1 ~ {LifeTime:20,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:1b,explosions:[{shape:"small_ball",colors:[I;16777215],has_trail:1b}]}}}}

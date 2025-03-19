@@ -13,10 +13,10 @@ execute if entity @s[tag=ai,scores={burstStreak=1..2}] run function ttr:ai/mutat
 
 #dinner
 tag @s add winner_chicken
-execute if entity @s[scores={burstStreak=5}] as @a unless entity @s[scores={shutUp=1..}] run tellraw @s ["",{"text":" "},{"translate":"ttr.game.burst_streak_5","italic":true,"with":[{"selector":"@e[limit=1,tag=winner_chicken]","italic":true}]},{"text":" >> 5","color":"green"}]
-execute if entity @s[scores={burstStreak=10}] as @a unless entity @s[scores={shutUp=1..}] run tellraw @s ["",{"text":" "},{"translate":"ttr.game.burst_streak_10","italic":true,"with":[{"selector":"@e[limit=1,tag=winner_chicken]","italic":true}]},{"text":" >> 10","color":"green"}]
-execute if entity @s[scores={burstStreak=15}] as @a unless entity @s[scores={shutUp=1..}] run tellraw @s ["",{"text":" "},{"translate":"ttr.game.burst_streak_15","italic":true,"with":[{"selector":"@e[limit=1,tag=winner_chicken]","italic":true}]},{"text":" >> 15","color":"green"}]
-execute if entity @s[scores={burstStreak=20}] as @a unless entity @s[scores={shutUp=1..}] run tellraw @s ["",{"text":" "},{"translate":"ttr.game.burst_streak_20","italic":true,"with":[{"selector":"@e[limit=1,tag=winner_chicken]","italic":true}]},{"text":" >> 20","color":"green"}]
+execute if entity @s[scores={burstStreak=5}] as @a unless entity @s[scores={shutUp=1..}] run tellraw @s ["",{text:" "},{translate:"ttr.game.burst_streak_5",italic:true,with:[{selector:"@e[limit=1,tag=winner_chicken]",italic:true}]},{text:" >> 5",color:"green"}]
+execute if entity @s[scores={burstStreak=10}] as @a unless entity @s[scores={shutUp=1..}] run tellraw @s ["",{text:" "},{translate:"ttr.game.burst_streak_10",italic:true,with:[{selector:"@e[limit=1,tag=winner_chicken]",italic:true}]},{text:" >> 10",color:"green"}]
+execute if entity @s[scores={burstStreak=15}] as @a unless entity @s[scores={shutUp=1..}] run tellraw @s ["",{text:" "},{translate:"ttr.game.burst_streak_15",italic:true,with:[{selector:"@e[limit=1,tag=winner_chicken]",italic:true}]},{text:" >> 15",color:"green"}]
+execute if entity @s[scores={burstStreak=20}] as @a unless entity @s[scores={shutUp=1..}] run tellraw @s ["",{text:" "},{translate:"ttr.game.burst_streak_20",italic:true,with:[{selector:"@e[limit=1,tag=winner_chicken]",italic:true}]},{text:" >> 20",color:"green"}]
 
 execute if entity @s[scores={burstStreak=5}] as @a unless entity @s[scores={shutUp=1..}] at @s run playsound minecraft:entity.wolf.howl master @s ~ ~100000 ~ 1000000 1
 execute if entity @s[scores={burstStreak=10}] as @a unless entity @s[scores={shutUp=1..}] at @s run playsound minecraft:entity.wolf.howl master @s ~ ~100000 ~ 1000000 1.15

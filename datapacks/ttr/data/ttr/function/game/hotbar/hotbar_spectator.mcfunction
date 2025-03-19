@@ -1,6 +1,6 @@
 #resource pack is missing? let the player know by invading their screen
-execute if score #global sec_timer matches ..10 run title @s subtitle ["",{"translate":"warning.resource_pack_is_missing","color":"#FF3333","fallback":"Resource pack is missing!"}]
-execute if score #global sec_timer matches 11.. run title @s subtitle ["",{"translate":"warning.resource_pack_is_missing","color":"#FF7777","fallback":"Resource pack is missing!"}]
+execute if score #global sec_timer matches ..10 run title @s subtitle ["",{translate:"warning.resource_pack_is_missing",color:"#FF3333","fallback":"Resource pack is missing!"}]
+execute if score #global sec_timer matches 11.. run title @s subtitle ["",{translate:"warning.resource_pack_is_missing",color:"#FF7777","fallback":"Resource pack is missing!"}]
 title @s title [""]
 
 #death cancels input here

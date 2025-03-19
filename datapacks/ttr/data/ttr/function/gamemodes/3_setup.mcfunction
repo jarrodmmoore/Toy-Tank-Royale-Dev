@@ -11,6 +11,6 @@ scoreboard players reset * points
 scoreboard players set @a[tag=inControl] points 0
 scoreboard players set @e[tag=ai] aiPoints 0
 
-bossbar set tank_bbar name ["",{"translate":"ttr.playing_to_x","bold":true,"with":[{"score":{"name":"#opt_scorelimit","objective":"value"}}]}]
+bossbar set tank_bbar name ["",{translate:"ttr.playing_to_x",bold:true,with:[{score:{name:"#opt_scorelimit",objective:"value"}}]}]
 
 scoreboard players set #celebration_time value 0

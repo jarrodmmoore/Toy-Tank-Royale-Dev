@@ -4,7 +4,7 @@ execute if score #start_time_tick value matches 20.. run scoreboard players remo
 execute if score #start_time_tick value matches 20.. run scoreboard players remove #start_time_tick value 20
 
 #bbar!
-bossbar set tank_bbar name ["",{"translate":"ttr.game_starts_in_x","bold":true,"with":[{"score":{"name":"#time2start","objective":"value"}}]}]
+bossbar set tank_bbar name ["",{translate:"ttr.game_starts_in_x",bold:true,with:[{score:{name:"#time2start",objective:"value"}}]}]
 execute store result bossbar tank_bbar value run scoreboard players get #time2start value
 bossbar set tank_bbar style notched_20
 

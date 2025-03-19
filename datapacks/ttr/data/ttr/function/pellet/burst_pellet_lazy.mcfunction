@@ -15,8 +15,8 @@ scoreboard players operation @s mvmt_dz = @s char_z
 scoreboard players operation @s mvmt_dz -= @s dummy_z
 
 #DEBUG
-#execute unless entity @s[scores={mvmt_dx=0}] run tellraw @a ["",{"text":"mvmt_dx="},{"score":{"name":"@s","objective":"mvmt_dx"}}]
-#execute unless entity @s[scores={mvmt_dz=0}] run tellraw @a ["",{"text":"mvmt_dz="},{"score":{"name":"@s","objective":"mvmt_dz"}}]
+#execute unless entity @s[scores={mvmt_dx=0}] run tellraw @a ["",{text:"mvmt_dx="},{score:{name:"@s",objective:"mvmt_dx"}}]
+#execute unless entity @s[scores={mvmt_dz=0}] run tellraw @a ["",{text:"mvmt_dz="},{score:{name:"@s",objective:"mvmt_dz"}}]
 
 execute unless entity @s[tag=bouncy] at @s unless block ~ ~1 ~ #ttr:pellet_okay run function ttr:pellet/hit_wall_2
 execute if entity @s[tag=bouncy] at @s unless block ~ ~1 ~ #ttr:pellet_okay run function ttr:pellet/hit_wall_1

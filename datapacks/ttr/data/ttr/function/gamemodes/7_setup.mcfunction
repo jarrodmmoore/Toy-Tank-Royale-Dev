@@ -6,7 +6,7 @@ bossbar set tank_bbar color white
 
 bossbar set tank_bbar players @a
 
-scoreboard objectives modify teamDisplay displayname ["",{"translate":"ttr.display.players","color":"white","bold":true}]
+scoreboard objectives modify teamDisplay displayname ["",{translate:"ttr.display.players",color:"white",bold:true}]
 
 scoreboard players set #infection_state value 0
 scoreboard players set #start_time_tick value 0
@@ -21,10 +21,10 @@ scoreboard players reset §§ teamDisplay
 team join sidebar_red §
 team join sidebar_blue §§
 
-team modify sidebar_red prefix ["",{"translate":"ttr.game.infected","color":"red"}]
-team modify sidebar_blue prefix ["",{"translate":"ttr.game.alive","color":"blue"}]
+team modify sidebar_red prefix ["",{translate:"ttr.game.infected",color:"red"}]
+team modify sidebar_blue prefix ["",{translate:"ttr.game.alive",color:"blue"}]
 
-bossbar set tank_bbar name ["",{"translate":"ttr.game_starting_soon","bold":true}]
+bossbar set tank_bbar name ["",{translate:"ttr.game_starting_soon",bold:true}]
 
 #all will respawn!
 scoreboard players set @a[tag=inControl] deathTime 1

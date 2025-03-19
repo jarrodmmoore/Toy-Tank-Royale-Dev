@@ -25,7 +25,7 @@ execute if score #opt_teams value matches 1 if score #opt_permadeath value match
 tag @s[tag=hasSlot8] remove hasSlot8
 execute if items entity @s hotbar.8 feather[custom_data~{slot8:1b}] run tag @s add hasSlot8
 clear @s[gamemode=!creative,tag=!hasSlot8] feather
-execute if entity @s[tag=!hasSlot8,tag=!noInventory] run item replace entity @s hotbar.8 with minecraft:feather[custom_name='{"translate":"ttr.hotbar.fast_feather","bold":true,"italic":false}',attribute_modifiers=[{id:"spectatorfastfeather",operation:"add_value",type:"movement_speed",amount:0.35d}],custom_data={slot8:1b}] 1
+execute if entity @s[tag=!hasSlot8,tag=!noInventory] run item replace entity @s hotbar.8 with minecraft:feather[custom_name={translate:"ttr.hotbar.fast_feather",bold:true,italic:false},attribute_modifiers=[{id:"spectatorfastfeather",operation:"add_value",type:"movement_speed",amount:0.35d}],custom_data={slot8:1b}] 1
 
 
 #drop yellow dye to see cosmetic menu

@@ -6,9 +6,9 @@ bossbar set tank_bbar color white
 
 bossbar set tank_bbar players
 
-bossbar set tank_bbar name ["",{"translate":"ttr.playing_to_x_captures","bold":true,"with":[{"score":{"name":"#opt_capturelimit","objective":"value"}}]}]
+bossbar set tank_bbar name ["",{translate:"ttr.playing_to_x_captures",bold:true,with:[{score:{name:"#opt_capturelimit",objective:"value"}}]}]
 
-scoreboard objectives modify teamDisplay displayname ["",{"translate":"ttr.display.captures","bold":true}]
+scoreboard objectives modify teamDisplay displayname ["",{translate:"ttr.display.captures",bold:true}]
 #scoreboard objectives setdisplay sidebar teamDisplay
 scoreboard players set #show_sidebar value 4
 scoreboard players set #sidebar_update value 99
@@ -17,8 +17,8 @@ scoreboard players reset § teamDisplay
 scoreboard players reset §§ teamDisplay
 team join sidebar_red §
 team join sidebar_blue §§
-team modify sidebar_red prefix ["",{"translate":"ttr.red_team","color":"red"}]
-team modify sidebar_blue prefix ["",{"translate":"ttr.blue_team","color":"blue"}]
+team modify sidebar_red prefix ["",{translate:"ttr.red_team",color:"red"}]
+team modify sidebar_blue prefix ["",{translate:"ttr.blue_team",color:"blue"}]
 
 scoreboard players set #celebration_time value 0
 

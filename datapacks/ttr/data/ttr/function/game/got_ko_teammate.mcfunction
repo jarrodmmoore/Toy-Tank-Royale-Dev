@@ -7,9 +7,9 @@
 scoreboard players add @s friendlyFires 1
 
 execute at @s run playsound entity.villager.no master @s ~ ~ ~ 10 1
-tellraw @s[scores={friendlyFires=..3}] ["",{"text":"Hey now... don't shoot your teammates!","color":"red","italic":true}]
-tellraw @s[scores={friendlyFires=4}] ["",{"text":"Ease off the friendly fire, friend.","color":"red","italic":true}]
-tellraw @s[scores={friendlyFires=5}] ["",{"text":"I ASKED POLITELY","color":"red","italic":true}]
-tellraw @s[scores={friendlyFires=6..}] ["",{"text":"you have been stopped","color":"red","italic":true}]
+tellraw @s[scores={friendlyFires=..3}] ["",{text:"Hey now... don't shoot your teammates!",color:"red",italic:true}]
+tellraw @s[scores={friendlyFires=4}] ["",{text:"Ease off the friendly fire, friend.",color:"red",italic:true}]
+tellraw @s[scores={friendlyFires=5}] ["",{text:"I ASKED POLITELY",color:"red",italic:true}]
+tellraw @s[scores={friendlyFires=6..}] ["",{text:"you have been stopped",color:"red",italic:true}]
 
 execute if entity @s[scores={friendlyFires=6..}] run function ttr:game/abandon_game

@@ -7,20 +7,20 @@ execute if score #ai_count value matches 1.. as @e[tag=ai] if score @s playerID 
 execute if score #player_count value matches 8.. run tag @a[tag=!attacker,tag=!victim,scores={shutUp=0}] add deafen
 tag @a[tag=!attacker,tag=!victim,scores={shutUp=1..}] add deafen
 
-execute unless score #damage_source value matches 1..11 run tellraw @a[tag=!deafen] ["",{"text":" "},{"selector":"@e[tag=attacker]"},{"text":" \uE001 "},{"selector":"@e[tag=victim]"}]
-execute if score #damage_source value matches 1 run tellraw @a[tag=!deafen] ["",{"text":" "},{"selector":"@e[tag=attacker]"},{"text":" \uE001 "},{"selector":"@e[tag=victim]"}]
-execute if score #damage_source value matches 2 run tellraw @a[tag=!deafen] ["",{"text":" "},{"selector":"@e[tag=attacker]"},{"text":" \uE002 "},{"selector":"@e[tag=victim]"}]
-execute if score #damage_source value matches 3 run tellraw @a[tag=!deafen] ["",{"text":" "},{"selector":"@e[tag=attacker]"},{"text":" \uE003 "},{"selector":"@e[tag=victim]"}]
-execute if score #damage_source value matches 4 run tellraw @a[tag=!deafen] ["",{"text":" "},{"selector":"@e[tag=attacker]"},{"text":" \uE004 "},{"selector":"@e[tag=victim]"}]
-execute if score #damage_source value matches 5 run tellraw @a[tag=!deafen] ["",{"text":" "},{"selector":"@e[tag=attacker]"},{"text":" \uE005 "},{"selector":"@e[tag=victim]"}]
-execute if score #damage_source value matches 6 run tellraw @a[tag=!deafen] ["",{"text":" "},{"selector":"@e[tag=attacker]"},{"text":" \uE006 "},{"selector":"@e[tag=victim]"}]
-execute if score #damage_source value matches 7 run tellraw @a[tag=!deafen] ["",{"text":" "},{"selector":"@e[tag=attacker]"},{"text":" \uE007 "},{"selector":"@e[tag=victim]"}]
-execute if score #damage_source value matches 8 run tellraw @a[tag=!deafen] ["",{"text":" "},{"selector":"@e[tag=attacker]"},{"text":" \uE008 "},{"selector":"@e[tag=victim]"}]
-execute if score #damage_source value matches 9 unless score #force_turtles value matches 1 run tellraw @a[tag=!deafen] ["",{"text":" "},{"selector":"@e[tag=attacker]"},{"text":" \uE009 "},{"selector":"@e[tag=victim]"}]
-execute if score #damage_source value matches 9 if score #force_turtles value matches 1 run tellraw @a[tag=!deafen] ["",{"text":" "},{"selector":"@e[tag=attacker]"},{"text":" \uE034 "},{"selector":"@e[tag=victim]"}]
+execute unless score #damage_source value matches 1..11 run tellraw @a[tag=!deafen] ["",{text:" "},{selector:"@e[tag=attacker]"},{text:" \uE001 "},{selector:"@e[tag=victim]"}]
+execute if score #damage_source value matches 1 run tellraw @a[tag=!deafen] ["",{text:" "},{selector:"@e[tag=attacker]"},{text:" \uE001 "},{selector:"@e[tag=victim]"}]
+execute if score #damage_source value matches 2 run tellraw @a[tag=!deafen] ["",{text:" "},{selector:"@e[tag=attacker]"},{text:" \uE002 "},{selector:"@e[tag=victim]"}]
+execute if score #damage_source value matches 3 run tellraw @a[tag=!deafen] ["",{text:" "},{selector:"@e[tag=attacker]"},{text:" \uE003 "},{selector:"@e[tag=victim]"}]
+execute if score #damage_source value matches 4 run tellraw @a[tag=!deafen] ["",{text:" "},{selector:"@e[tag=attacker]"},{text:" \uE004 "},{selector:"@e[tag=victim]"}]
+execute if score #damage_source value matches 5 run tellraw @a[tag=!deafen] ["",{text:" "},{selector:"@e[tag=attacker]"},{text:" \uE005 "},{selector:"@e[tag=victim]"}]
+execute if score #damage_source value matches 6 run tellraw @a[tag=!deafen] ["",{text:" "},{selector:"@e[tag=attacker]"},{text:" \uE006 "},{selector:"@e[tag=victim]"}]
+execute if score #damage_source value matches 7 run tellraw @a[tag=!deafen] ["",{text:" "},{selector:"@e[tag=attacker]"},{text:" \uE007 "},{selector:"@e[tag=victim]"}]
+execute if score #damage_source value matches 8 run tellraw @a[tag=!deafen] ["",{text:" "},{selector:"@e[tag=attacker]"},{text:" \uE008 "},{selector:"@e[tag=victim]"}]
+execute if score #damage_source value matches 9 unless score #force_turtles value matches 1 run tellraw @a[tag=!deafen] ["",{text:" "},{selector:"@e[tag=attacker]"},{text:" \uE009 "},{selector:"@e[tag=victim]"}]
+execute if score #damage_source value matches 9 if score #force_turtles value matches 1 run tellraw @a[tag=!deafen] ["",{text:" "},{selector:"@e[tag=attacker]"},{text:" \uE034 "},{selector:"@e[tag=victim]"}]
 #instead of adding new assets for triple/burst pellets, let's just tint the standard one
-execute if score #damage_source value matches 10 run tellraw @a[tag=!deafen] ["",{"text":" "},{"selector":"@e[tag=attacker]"},{"text":" \uE001 ","color":"#FFFF77"},{"selector":"@e[tag=victim]"}]
-execute if score #damage_source value matches 11 run tellraw @a[tag=!deafen] ["",{"text":" "},{"selector":"@e[tag=attacker]"},{"text":" \uE001 ","color":"#77DDFF"},{"selector":"@e[tag=victim]"}]
+execute if score #damage_source value matches 10 run tellraw @a[tag=!deafen] ["",{text:" "},{selector:"@e[tag=attacker]"},{text:" \uE001 ",color:"#FFFF77"},{selector:"@e[tag=victim]"}]
+execute if score #damage_source value matches 11 run tellraw @a[tag=!deafen] ["",{text:" "},{selector:"@e[tag=attacker]"},{text:" \uE001 ",color:"#77DDFF"},{selector:"@e[tag=victim]"}]
 
 execute as @e[tag=attacker,tag=!victim] at @s run function ttr:game/got_ko
 #function ttr:game/got_ko_teammate

@@ -1,9 +1,9 @@
 scoreboard players add #celebration_time value 1
 
-execute if score #celebration_time value matches 2 run tellraw @a ["",{"text":"\n"},{"translate":"ttr.game_ended","bold":true,"color":"green"}]
-execute if score #celebration_time value matches 2 run execute as @a[tag=inControl] if score @s points >= #opt_keeplimit value run tellraw @a [{"translate":"ttr.player_wins","color":"white","bold":false,"with":[{"selector":"@s"}]}]
-execute if score #celebration_time value matches 2 run execute as @e[tag=ai] if score @s aiPoints >= #opt_keeplimit value run tellraw @a [{"translate":"ttr.player_wins","color":"white","bold":false,"with":[{"selector":"@s"}]}]
-execute if score #celebration_time value matches 2 run tellraw @a ["",{"text":" "}]
+execute if score #celebration_time value matches 2 run tellraw @a ["",{text:"\n"},{translate:"ttr.game_ended",bold:true,color:"green"}]
+execute if score #celebration_time value matches 2 run execute as @a[tag=inControl] if score @s points >= #opt_keeplimit value run tellraw @a [{translate:"ttr.player_wins",color:"white",bold:false,with:[{selector:"@s"}]}]
+execute if score #celebration_time value matches 2 run execute as @e[tag=ai] if score @s aiPoints >= #opt_keeplimit value run tellraw @a [{translate:"ttr.player_wins",color:"white",bold:false,with:[{selector:"@s"}]}]
+execute if score #celebration_time value matches 2 run tellraw @a ["",{text:" "}]
 
 #fireworks
 execute if score #celebration_time value matches 2 as @e[type=zombie,tag=ai,tag=!player_ded] if score @s aiPoints >= #opt_keeplimit value at @s run summon firework_rocket ~ ~1 ~ {LifeTime:20,FireworksItem:{id:"firework_rocket",count:1,components:{"minecraft:fireworks":{flight_duration:1b,explosions:[{shape:"small_ball",colors:[I;16777215],has_trail:1b}]}}}}

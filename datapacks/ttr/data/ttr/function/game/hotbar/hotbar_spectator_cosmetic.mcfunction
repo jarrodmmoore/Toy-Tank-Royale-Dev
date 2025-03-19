@@ -2,7 +2,7 @@
 tag @s[tag=hasSlot0] remove hasSlot0
 execute if items entity @s hotbar.0 *[custom_data~{slot0c:1b}] run tag @s add hasSlot0
 clear @s[gamemode=!creative,tag=!hasSlot0] structure_void
-execute if entity @s[tag=!hasSlot0,tag=!noInventory] run item replace entity @s hotbar.0 with minecraft:structure_void[custom_name='{"translate":"ttr.hotbar.back_to_menu","bold":false,"italic":false,"color":"light_purple"}',custom_data={slot0c:1b}]
+execute if entity @s[tag=!hasSlot0,tag=!noInventory] run item replace entity @s hotbar.0 with minecraft:structure_void[custom_name={translate:"ttr.hotbar.back_to_menu",bold:false,italic:false,color:"light_purple"},custom_data={slot0c:1b}]
 
 #SLOT 1
 
@@ -40,7 +40,7 @@ execute if score @s cosmeticSet2 matches 8 run function ttr:game/hotbar/paint_jo
 tag @s[tag=hasSlot0] remove hasSlot8
 execute if items entity @s hotbar.8 *[custom_data~{slot8c:1b}] run tag @s add hasSlot8
 clear @s[gamemode=!creative,tag=!hasSlot8] barrier
-execute if entity @s[tag=!hasSlot8,tag=!noInventory] run item replace entity @s hotbar.8 with minecraft:barrier[custom_name='{"translate":"ttr.hotbar.clear_all","bold":false,"italic":false,"color":"gray"}',custom_data={slot8c:1b}]
+execute if entity @s[tag=!hasSlot8,tag=!noInventory] run item replace entity @s hotbar.8 with minecraft:barrier[custom_name={translate:"ttr.hotbar.clear_all",bold:false,italic:false,color:"gray"},custom_data={slot8c:1b}]
 
 #inputs
 execute if entity @s[scores={cosmeticMenu=101..}] run function ttr:game/hotbar/paint_job/cycle_body

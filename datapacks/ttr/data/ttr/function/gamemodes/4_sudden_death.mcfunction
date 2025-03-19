@@ -18,7 +18,7 @@ execute if score #ai_count value matches 1.. run scoreboard players set @e[tag=a
 execute if score #ai_count value matches 1.. run scoreboard players set @e[tag=ai,tag=!player_ded,type=zombie] infinite_bounce 20
 
 #sudden death!!
-bossbar set tank_bbar name ["",{"translate":"ttr.sudden_death","bold":true,"color":"red"}]
+bossbar set tank_bbar name ["",{translate:"ttr.sudden_death",bold:true,color:"red"}]
 
 #time up? end the game
 execute if score #time_remaining value matches ..0 run scoreboard players set #elim_timeout value 60

@@ -1,6 +1,6 @@
 #debug
-#tellraw @a ["",{"text":"#attackerID = "},{"score":{"name":"@s","objective":"playerID"}},{"text":" -- "},{"selector":"@s"}]
-#tellraw @a ["",{"text":"#backupAttackerID = "},{"score":{"name":"#backupAttackerID","objective":"value"}}]
+#tellraw @a ["",{text:"#attackerID = "},{score:{name:"@s",objective:"playerID"}},{text:" -- "},{selector:"@s"}]
+#tellraw @a ["",{text:"#backupAttackerID = "},{score:{name:"#backupAttackerID",objective:"value"}}]
 
 execute if score @s playerID matches 1.. run scoreboard players operation #attackerID value = @s playerID
 execute unless score @s playerID matches 1.. run scoreboard players operation #attackerID value = #backupAttackerID value

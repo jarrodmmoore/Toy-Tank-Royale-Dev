@@ -23,7 +23,7 @@ function ttr:random/level_gen/team_layout/_index
 scoreboard players set #elim_progress value 0
 
 #message!
-tellraw @a[scores={shutUp=..0}] ["",{"text":"\n"},{"translate":"ttr.round_started","bold":true},{"text":"\n"},{"translate":"ttr.good_luck","bold":false},{"text":"\n"}]
+tellraw @a[scores={shutUp=..0}] ["",{text:"\n"},{translate:"ttr.round_started",bold:true},{text:"\n"},{translate:"ttr.good_luck",bold:false},{text:"\n"}]
 
 scoreboard players operation #time_remaining value = #opt_elim_time value
 scoreboard players set #20 value 20

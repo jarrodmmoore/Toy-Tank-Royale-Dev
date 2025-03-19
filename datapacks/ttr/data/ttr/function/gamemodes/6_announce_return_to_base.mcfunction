@@ -1,6 +1,6 @@
 #announce to chat
-execute if entity @s[tag=red_flag] run tellraw @a[scores={shutUp=..0}] ["",{"translate":"ttr.ctf.flag_returned","color":"white","bold":false,"with":[{"translate":"ttr.ctf.red","color":"red"},{"translate":"ttr.ctf.red","color":"red"}]}]
-execute if entity @s[tag=blue_flag] run tellraw @a[scores={shutUp=..0}] ["",{"translate":"ttr.ctf.flag_returned","color":"white","bold":false,"with":[{"translate":"ttr.ctf.blue","color":"blue"},{"translate":"ttr.ctf.blue","color":"blue"}]}]
+execute if entity @s[tag=red_flag] run tellraw @a[scores={shutUp=..0}] ["",{translate:"ttr.ctf.flag_returned",color:"white",bold:false,with:[{translate:"ttr.ctf.red",color:"red"},{translate:"ttr.ctf.red",color:"red"}]}]
+execute if entity @s[tag=blue_flag] run tellraw @a[scores={shutUp=..0}] ["",{translate:"ttr.ctf.flag_returned",color:"white",bold:false,with:[{translate:"ttr.ctf.blue",color:"blue"},{translate:"ttr.ctf.blue",color:"blue"}]}]
 
 #particles and sound
 particle falling_dust{block_state:"minecraft:magenta_wool"} ~ ~1 ~ 0.3 0.3 0.3 1 20 force @a

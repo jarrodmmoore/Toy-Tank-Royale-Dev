@@ -35,8 +35,8 @@ scoreboard players operation #dz value *= #1000 value
 scoreboard players operation #dz value /= #z_pos value
 
 #debug
-#tellraw @a ["",{"text":"dx="},{"score":{"name":"#dx","objective":"value"}}]
-#tellraw @a ["",{"text":"dz="},{"score":{"name":"#dz","objective":"value"}}]
+#tellraw @a ["",{text:"dx="},{score:{name:"#dx",objective:"value"}}]
+#tellraw @a ["",{text:"dz="},{score:{name:"#dz",objective:"value"}}]
 
 #breakable blocks
 execute if block ~ ~1 ~ #ttr:breakable at @s unless entity @s[tag=bouncy] run function ttr:pellet/generic_burst

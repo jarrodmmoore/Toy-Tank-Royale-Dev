@@ -1,4 +1,4 @@
-summon armor_stand ^ ^ ^.5 {NoGravity:1b,Invulnerable:1b,Small:0b,Invisible:1b,NoBasePlate:1b,Tags:["setme","pellet","homing_pellet","p_can_hit","p_can_pop","dont_spawn_here"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:orange_dye",count:1,components:{"minecraft:item_model":"ttr/projectiles/homing_pellet"}}]}
+summon armor_stand ^ ^ ^.5 {NoGravity:1b,Invulnerable:1b,Small:0b,Invisible:1b,NoBasePlate:1b,Tags:["setme","pellet","homing_pellet","p_can_hit","p_can_pop","dont_spawn_here"],DisabledSlots:4144959,equipment:{head:{id:"minecraft:orange_dye",count:1,components:{"minecraft:item_model":"ttr/projectiles/homing_pellet"}}}}
 
 #SOUND
 playsound minecraft:entity.blaze.hurt master @a ~ ~10 ~ 2 1.5

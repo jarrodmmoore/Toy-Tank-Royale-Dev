@@ -1,4 +1,4 @@
-summon armor_stand ^ ^ ^ {NoGravity:1b,Invulnerable:1b,Small:0b,Invisible:1b,NoBasePlate:1b,Tags:["setme","pellet","mine","remote_mine","dont_spawn_here"],DisabledSlots:4144959,ArmorItems:[{},{},{},{id:"minecraft:gray_dye",count:1,components:{"minecraft:item_model":"ttr/projectiles/remote_mine"}}]}
+summon armor_stand ^ ^ ^ {NoGravity:1b,Invulnerable:1b,Small:0b,Invisible:1b,NoBasePlate:1b,Tags:["setme","pellet","mine","remote_mine","dont_spawn_here"],DisabledSlots:4144959,equipment:{head:{id:"minecraft:gray_dye",count:1,components:{"minecraft:item_model":"ttr/projectiles/remote_mine"}}}}
 
 #SOUND
 playsound minecraft:entity.item.pickup master @a ~ ~10 ~ 2 .5
