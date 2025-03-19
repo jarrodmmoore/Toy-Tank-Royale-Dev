@@ -8,7 +8,7 @@ execute if score #color2 value matches 7 run data merge block 0 150 0 {front_tex
 execute if score #color2 value matches 8 run data merge block 0 150 0 {front_text:{messages:[[{text:"CPU_",color:"gray"},{score:{name:"#temp_id",objective:"value"},color:"gray"}],{text:""},{text:""},{text:""}]},is_waxed:1b}
 
 data modify entity @s CustomName set from block 0 150 0 front_text.messages[0]
-data merge entity @s {CustomNameVisible:1b}
+data modify entity @s CustomNameVisible set value true
 
 #while we're here: apply proper head model
 #tanks

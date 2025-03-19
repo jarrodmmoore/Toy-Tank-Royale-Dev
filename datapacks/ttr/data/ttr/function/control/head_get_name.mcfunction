@@ -1,7 +1,7 @@
 data merge block 0 150 0 {front_text:{messages:[{selector:"@p[tag=pl_self]"},'','','']},is_waxed:1b}
 
 data modify entity @s CustomName set from block 0 150 0 front_text.messages[0]
-data merge entity @s {CustomNameVisible:1b}
+data modify entity @s CustomNameVisible set value true
 
 #while we're here: apply proper head model
 #tanks

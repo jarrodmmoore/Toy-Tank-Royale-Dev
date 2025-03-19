@@ -20,7 +20,6 @@ execute if score #opt_teamlayout value matches 0 if score #opt_transformrate val
 
 
 tellraw @s ["",{text:" "}]
-execute unless score #force_turtles value matches 1 unless score #opt_aicontext value matches 2 if score #opt_aicount_mod value matches 25.. run tellraw @s ["",{translate:"ttr.menu.ai.player_count_warning",color:"red",italic:true}]
 
 tellraw @s ["",{text:"[",color:"gold"},{translate:"ttr.menu.return",bold:false,color:"gold",click_event:{action:"run_command",command:"/trigger optSelect set 2002"},hover_event:{action:"show_text",value:[{translate:"ttr.menu.return",color:"gold"}]}},{text:"]",color:"gold"}]
 

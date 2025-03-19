@@ -33,6 +33,9 @@ scoreboard players set @s cooldown_mult 100
 scoreboard players set @s infinite_bounce 0
 tag @s remove extra_life
 
+#forget mixed colors
+scoreboard players reset @s mixTankColors
+
 effect clear @s speed
 effect clear @s haste
 effect clear @s absorption

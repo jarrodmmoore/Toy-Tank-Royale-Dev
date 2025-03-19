@@ -1,6 +1,9 @@
 #invisible
 execute if score #model_flash value matches ..1 run item replace entity @s armor.head with air
-execute if score #model_flash value matches ..1 run data merge entity @s {CustomNameVisible:0b}
+execute if score #model_flash value matches ..1 run data modify entity @s CustomNameVisible set value false
+
+#show name again when visible
+execute if score #model_flash value matches 2.. run data modify entity @s CustomNameVisible set value true
 
 #tank model
 execute if score #model_flash value matches 2.. unless score #headModel value matches 1 unless score #color_2 value matches 2.. run item replace entity @s armor.head with yellow_dye[item_model="ttr/tanks/green_head"] 1

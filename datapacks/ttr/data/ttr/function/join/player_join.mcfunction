@@ -30,6 +30,12 @@ scoreboard players reset @s playerNode
 scoreboard players reset @s mixTankColors
 scoreboard players set @s cosmeticMenu 0
 
+#need a model
+scoreboard players add @s tankBodyModel 0
+scoreboard players add @s tankHeadModel 0
+execute if score #force_turtles value matches 1 run scoreboard players set @s tankBodyModel 1
+execute if score #force_turtles value matches 1 run scoreboard players set @s tankHeadModel 1
+
 #default tp location
 scoreboard players set @s char_set_x 8
 scoreboard players set @s char_set_y 31

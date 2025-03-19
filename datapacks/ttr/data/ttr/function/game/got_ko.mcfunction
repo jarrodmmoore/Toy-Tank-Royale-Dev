@@ -18,11 +18,11 @@ execute if entity @s[scores={burstStreak=10}] as @a unless entity @s[scores={shu
 execute if entity @s[scores={burstStreak=15}] as @a unless entity @s[scores={shutUp=1..}] run tellraw @s ["",{text:" "},{translate:"ttr.game.burst_streak_15",italic:true,with:[{selector:"@e[limit=1,tag=winner_chicken]",italic:true}]},{text:" >> 15",color:"green"}]
 execute if entity @s[scores={burstStreak=20}] as @a unless entity @s[scores={shutUp=1..}] run tellraw @s ["",{text:" "},{translate:"ttr.game.burst_streak_20",italic:true,with:[{selector:"@e[limit=1,tag=winner_chicken]",italic:true}]},{text:" >> 20",color:"green"}]
 
-execute if entity @s[scores={burstStreak=5}] as @a unless entity @s[scores={shutUp=1..}] at @s run playsound minecraft:entity.wolf.howl master @s ~ ~100000 ~ 1000000 1
-execute if entity @s[scores={burstStreak=10}] as @a unless entity @s[scores={shutUp=1..}] at @s run playsound minecraft:entity.wolf.howl master @s ~ ~100000 ~ 1000000 1.15
-execute if entity @s[scores={burstStreak=15}] as @a unless entity @s[scores={shutUp=1..}] at @s run playsound minecraft:entity.wolf.howl master @s ~ ~100000 ~ 1000000 1.3
-execute if entity @s[scores={burstStreak=20}] as @a unless entity @s[scores={shutUp=1..}] at @s run playsound minecraft:entity.wolf.howl master @s ~ ~100000 ~ 1000000 1
-execute if entity @s[scores={burstStreak=20}] as @a unless entity @s[scores={shutUp=1..}] at @s run playsound minecraft:entity.wolf.howl master @s ~ ~100000 ~ 1000000 1.15
-execute if entity @s[scores={burstStreak=20}] as @a unless entity @s[scores={shutUp=1..}] at @s run playsound minecraft:entity.wolf.howl master @s ~ ~100000 ~ 1000000 1.3
+execute if entity @s[scores={burstStreak=5}] as @a unless entity @s[scores={shutUp=1..}] at @s run playsound minecraft:entity.firework_rocket.twinkle_far master @s ~ ~100000 ~ 1000000 1
+execute if entity @s[scores={burstStreak=10}] as @a unless entity @s[scores={shutUp=1..}] at @s run playsound minecraft:entity.firework_rocket.twinkle_far master @s ~ ~100000 ~ 1000000 1.25
+execute if entity @s[scores={burstStreak=15}] as @a unless entity @s[scores={shutUp=1..}] at @s run playsound minecraft:entity.firework_rocket.twinkle_far master @s ~ ~100000 ~ 1000000 1.5
+execute if entity @s[scores={burstStreak=20}] as @a unless entity @s[scores={shutUp=1..}] at @s run playsound minecraft:entity.firework_rocket.twinkle_far master @s ~ ~100000 ~ 1000000 1
+execute if entity @s[scores={burstStreak=20}] as @a unless entity @s[scores={shutUp=1..}] at @s run playsound minecraft:entity.firework_rocket.twinkle_far master @s ~ ~100000 ~ 1000000 1.25
+execute if entity @s[scores={burstStreak=20}] as @a unless entity @s[scores={shutUp=1..}] at @s run playsound minecraft:entity.firework_rocket.twinkle_far master @s ~ ~100000 ~ 1000000 1.5
 
 tag @s remove winner_chicken

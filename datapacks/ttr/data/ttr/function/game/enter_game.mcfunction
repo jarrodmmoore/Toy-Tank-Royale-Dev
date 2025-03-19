@@ -65,9 +65,7 @@ execute if score @s shutUp matches ..0 run function ttr:control/inform_game_type
 #get colors
 function ttr:game/colors/get_colors
 
-#get player model
-scoreboard players set @s tankBodyModel 0
-scoreboard players set @s tankHeadModel 0
+#force player model to be turtle if that's what we wanted
 execute if score #force_turtles value matches 1 run scoreboard players set @s tankBodyModel 1
 execute if score #force_turtles value matches 1 run scoreboard players set @s tankHeadModel 1
 
