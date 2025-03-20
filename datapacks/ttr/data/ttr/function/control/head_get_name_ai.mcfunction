@@ -12,23 +12,23 @@ data modify entity @s CustomNameVisible set value true
 
 #while we're here: apply proper head model
 #tanks
-execute if score #headModel value matches 0 if score #color2 value matches 1 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/head_green"]
-execute if score #headModel value matches 0 if score #color2 value matches 2 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/head_red"]
-execute if score #headModel value matches 0 if score #color2 value matches 3 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/head_blue"]
-execute if score #headModel value matches 0 if score #color2 value matches 4 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/head_yellow"]
-execute if score #headModel value matches 0 if score #color2 value matches 5 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/head_white"]
-execute if score #headModel value matches 0 if score #color2 value matches 6 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/head_pink"]
-execute if score #headModel value matches 0 if score #color2 value matches 7 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/head_cyan"]
-execute if score #headModel value matches 0 if score #color2 value matches 8 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/head_gray"]
+execute if score #headModel value matches 0 if score #color2 value matches 1 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/green_head"]
+execute if score #headModel value matches 0 if score #color2 value matches 2 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/red_head"]
+execute if score #headModel value matches 0 if score #color2 value matches 3 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/blue_head"]
+execute if score #headModel value matches 0 if score #color2 value matches 4 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/yellow_head"]
+execute if score #headModel value matches 0 if score #color2 value matches 5 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/white_head"]
+execute if score #headModel value matches 0 if score #color2 value matches 6 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/pink_head"]
+execute if score #headModel value matches 0 if score #color2 value matches 7 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/cyan_head"]
+execute if score #headModel value matches 0 if score #color2 value matches 8 run item replace entity @s armor.head with green_dye[item_model="ttr/tanks/gray_head"]
 #turtles
-execute if score #headModel value matches 1 if score #color2 value matches 1 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/head_green"]
-execute if score #headModel value matches 1 if score #color2 value matches 2 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/head_red"]
-execute if score #headModel value matches 1 if score #color2 value matches 3 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/head_blue"]
-execute if score #headModel value matches 1 if score #color2 value matches 4 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/head_yellow"]
-execute if score #headModel value matches 1 if score #color2 value matches 5 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/head_white"]
-execute if score #headModel value matches 1 if score #color2 value matches 6 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/head_pink"]
-execute if score #headModel value matches 1 if score #color2 value matches 7 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/head_cyan"]
-execute if score #headModel value matches 1 if score #color2 value matches 8 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/head_gray"]
+execute if score #headModel value matches 1 if score #color2 value matches 1 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/green_head"]
+execute if score #headModel value matches 1 if score #color2 value matches 2 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/red_head"]
+execute if score #headModel value matches 1 if score #color2 value matches 3 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/blue_head"]
+execute if score #headModel value matches 1 if score #color2 value matches 4 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/yellow_head"]
+execute if score #headModel value matches 1 if score #color2 value matches 5 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/white_head"]
+execute if score #headModel value matches 1 if score #color2 value matches 6 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/pink_head"]
+execute if score #headModel value matches 1 if score #color2 value matches 7 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/cyan_head"]
+execute if score #headModel value matches 1 if score #color2 value matches 8 run item replace entity @s armor.head with green_dye[item_model="ttr/turtles/gray_head"]
 
 #get team color
 execute unless score #color2 value matches 1..8 run team join color_green @s
