@@ -15,7 +15,7 @@ execute if score #recursions value matches 1..4 as @e[type=area_effect_cloud,tag
 execute if score #good_spawn value matches 1 at @e[type=area_effect_cloud,tag=aec_spawnpoint,limit=1] run summon marker ~ ~ ~ {Tags:["item_spawnpoint"]}
 
 #kill butt
-kill @e[type=area_effect_cloud,tag=aec_spawnpoint,limit=1]
+kill @e[type=area_effect_cloud,tag=aec_spawnpoint]
 
 #recursion if this spawnpoint was garbage
 execute if score #good_spawn value matches 0 if score #recursions value matches 1.. run function ttr:random/powerups/spreadplayer_aec_flag

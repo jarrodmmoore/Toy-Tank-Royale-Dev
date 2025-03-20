@@ -19,7 +19,7 @@ execute if score #recursions value matches 1..4 as @e[type=area_effect_cloud,tag
 execute if score #good_spawn value matches 1 if entity @s[type=!player] run tp @s @e[type=area_effect_cloud,tag=aec_spawnpoint,limit=1]
 
 #kill butt
-kill @e[type=area_effect_cloud,tag=aec_spawnpoint,limit=1]
+kill @e[type=area_effect_cloud,tag=aec_spawnpoint]
 
 #recursion if this spawnpoint was garbage
 execute if score #good_spawn value matches 0 if score #recursions value matches 1.. run function ttr:random/spreadplayer_aec
