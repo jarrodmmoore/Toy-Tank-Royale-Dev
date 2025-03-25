@@ -82,8 +82,8 @@ scoreboard players operation #checkID value = @s playerID
 scoreboard players set #model_flash value 2
 scoreboard players operation #color_1 value = @s color_1
 scoreboard players operation #color_2 value = @s color_2
-execute if score #force_turtles value matches 1 run scoreboard players set @s tankBodyModel 0
-execute if score #force_turtles value matches 1 run scoreboard players set @s tankHeadModel 0
+execute if score #force_turtles value matches 1 run scoreboard players set @s tankBodyModel 1
+execute if score #force_turtles value matches 1 run scoreboard players set @s tankHeadModel 1
 scoreboard players operation #bodyModel value = @s tankBodyModel
 scoreboard players operation #headModel value = @s tankHeadModel
 execute if entity @s[type=zombie,tag=ai] run function ttr:ai/color_setup/_index
