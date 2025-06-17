@@ -1,7 +1,7 @@
 scoreboard players remove #recursions value 1
 
 #canary in the coal mine
-summon area_effect_cloud ~ 31 ~ {Duration:1,Tags:["aec_spawnpoint"]}
+summon area_effect_cloud ~ 31 ~ {custom_particle:{type:"block",block_state:{Name:"air"}},WaitTime:0,Duration:1,Tags:["aec_spawnpoint"]}
 execute as @e[tag=aec_spawnpoint] at @s run spreadplayers ~ ~ 10 10 under 30 false @s
 
 

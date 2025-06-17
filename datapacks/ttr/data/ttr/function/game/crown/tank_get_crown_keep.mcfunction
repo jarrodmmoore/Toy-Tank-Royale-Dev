@@ -12,4 +12,4 @@ scoreboard players set #crown_effect value 0
 
 #remember location
 #kill @e[type=area_effect_cloud,tag=lastCrownLocation]
-#execute at @s positioned ~ 29 ~ run summon area_effect_cloud ~ ~ ~ {Duration:2,Tags:["lastCrownLocation"]}
+#execute at @s positioned ~ 29 ~ run summon area_effect_cloud ~ ~ ~ {custom_particle:{type:"block",block_state:{Name:"air"}},WaitTime:0,Duration:2,Tags:["lastCrownLocation"]}

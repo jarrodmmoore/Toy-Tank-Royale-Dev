@@ -276,6 +276,7 @@ team modify sidebar_blue color blue
 #gamerules
 gamerule spawnChunkRadius 10
 gamerule disablePlayerMovementCheck true
+gamerule locatorBar false
 
 #some constants
 scoreboard players set #1748 value 1748
