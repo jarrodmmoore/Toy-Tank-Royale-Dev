@@ -70,7 +70,7 @@ execute positioned ~2 ~1 ~3 if block ~ ~ ~ #ttr:breakable run setblock ~ ~ ~ air
 
 #SOUND
 playsound minecraft:entity.wither.hurt master @a ~ ~10 ~ 4 1.3
-particle flash ~ ~1.6 ~ 0 0 0 1 1 force @a
+particle flash{color:[1,1,1,1]} ~ ~1.6 ~ 0 0 0 1 1 force @a
 
 #animation
 execute as @e[tag=player_char,type=zombie] if score @s playerID = #attackerID value run tag @s add blast_source

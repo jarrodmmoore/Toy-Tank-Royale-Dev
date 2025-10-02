@@ -274,7 +274,6 @@ team add sidebar_blue
 team modify sidebar_blue color blue
 
 #gamerules
-gamerule spawnChunkRadius 10
 gamerule disablePlayerMovementCheck true
 gamerule locatorBar false
 
