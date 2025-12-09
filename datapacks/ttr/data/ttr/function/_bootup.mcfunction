@@ -274,8 +274,8 @@ team add sidebar_blue
 team modify sidebar_blue color blue
 
 #gamerules
-gamerule disablePlayerMovementCheck true
-gamerule locatorBar false
+gamerule player_movement_check false
+gamerule locator_bar false
 
 #some constants
 scoreboard players set #1748 value 1748
