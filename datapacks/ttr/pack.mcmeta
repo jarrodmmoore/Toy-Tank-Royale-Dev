@@ -1,9 +1,9 @@
 {
 	"pack":
 	{
-		"pack_format": 94,
-		"min_format": 94,
-		"max_format": 94,
+		"pack_format": 101,
+		"min_format": 101,
+		"max_format": 101,
 		"description": "Toy Tank Royale"
 	},
 	"filter": {

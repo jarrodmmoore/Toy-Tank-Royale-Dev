@@ -8,6 +8,7 @@ clear @s
 team join nocollide @s
 gamemode adventure
 tp @s 8 47 8 180 0
+attribute @s block_interaction_range base reset
 
 #temporary values
 scoreboard players set @s char_set_x 8

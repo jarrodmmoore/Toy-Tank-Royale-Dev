@@ -69,6 +69,10 @@ title @s actionbar [""]
 title @s subtitle [""]
 title @s title [""]
 
+#there's a strange bug in 26.1 where right clicking blocks in adventure mode causes an error message about the world height
+#so i'm using a hack solution to get around this
+attribute @s block_interaction_range base reset
+
 #join the spectator team unhelpfully titled "nocollide"
 team join nocollide @s
 

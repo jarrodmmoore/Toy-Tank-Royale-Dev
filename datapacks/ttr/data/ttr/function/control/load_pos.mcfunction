@@ -2,6 +2,8 @@ gamemode adventure @s
 tag @a[tag=mcOwner] remove mcOwner
 tag @s add mcOwner
 
+attribute @s block_interaction_range base set 0
+
 title @s actionbar [""]
 title @s subtitle [""]
 title @s title [""]
