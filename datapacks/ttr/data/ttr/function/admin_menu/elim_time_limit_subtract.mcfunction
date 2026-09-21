@@ -9,4 +9,4 @@ execute if score #opt_elim_time value matches ..-1 run scoreboard players set #o
 #update display n stuff..
 execute if score #opt_gamemode value matches 4 run function ttr:gamemodes/4_setup
 
-function ttr:admin_menu/_open
+function ttr:admin_menu/__open

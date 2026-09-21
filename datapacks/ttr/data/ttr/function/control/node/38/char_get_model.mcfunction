@@ -10,8 +10,8 @@ function ttr:pellet/tanks_check_area
 #this isn't related to model stuff, but our collision zombie needs to run this at SOME point
 
 #find our model
-#execute as @e[tag=player_model,type=armor_stand] if score @s playerID = #temp_id value run tag @s add my_model
-#execute as @e[tag=player_model_head,type=armor_stand] if score @s playerID = #temp_id value run tag @s add my_model_2
+#execute as @e[tag=player_model,type=item_display] if score @s playerID = #temp_id value run tag @s add my_model
+#execute as @e[tag=player_model_head,type=item_display] if score @s playerID = #temp_id value run tag @s add my_model_2
 
 #model missing? spawn a new one
 execute unless entity 00000026-0000-0000-0000-000000000002 run function ttr:control/node/38/summon_model
@@ -24,16 +24,13 @@ execute unless score global oTimer matches 9 as 00000026-0000-0000-0000-00000000
 
 #come, tp to me
 scoreboard players set 00000026-0000-0000-0000-000000000002 lifespan 10
-execute as 00000026-0000-0000-0000-000000000002 rotated as @s run tp @s ~ ~-1.2 ~ ~ ~
+execute as 00000026-0000-0000-0000-000000000002 rotated as @s run tp @s ~ ~0.5 ~ ~ 0
+#head is temporary
 scoreboard players set 00000026-0000-0000-0000-000000000003 lifespan 10
 #head teleport is handled elsewhere
 
-#correct direction by exploiting armor stand jank
-#--done because armor stands are very lazy when it comes to showing what direction they're truly facing
-#--this prevents the character model from getting stuck facing the wrong way visually
-#--(I say "prevent" but it doesn't work 100%...  it stops the visual error *most* of the time)
-execute if score #global dCorrect matches 1 as 00000026-0000-0000-0000-000000000002 at @s run tp @s ~ ~ ~ ~ 45
-execute if score #global dCorrect matches 4 as 00000026-0000-0000-0000-000000000002 at @s run tp @s ~ ~ ~ ~ -45
+#execute if score #global dCorrect matches 1 as 00000026-0000-0000-0000-000000000002 at @s run tp @s ~ ~ ~ ~ 45
+#execute if score #global dCorrect matches 4 as 00000026-0000-0000-0000-000000000002 at @s run tp @s ~ ~ ~ ~ -45
 
 #model is rotated to be in the proper direction
 #execute if entity @s[scores={lastDirection=1}] unless score global oTimer matches 9 as 00000026-0000-0000-0000-000000000002 run data merge entity @s {Rotation:[0.0f,0.0f]}

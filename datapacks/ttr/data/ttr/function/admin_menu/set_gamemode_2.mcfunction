@@ -11,8 +11,8 @@ scoreboard players set #opt_allow_coins value 0
 scoreboard players set #opt_permadeath value 0
 
 scoreboard players set #crown_keep_state value 0
-tag @e[tag=gold_crown,type=armor_stand] remove priorityTarget
-team join color_yellow @e[tag=gold_crown,type=armor_stand]
+tag @e[tag=gold_crown,type=item_display] remove priorityTarget
+team join color_yellow @e[tag=gold_crown,type=item_display]
 
 bossbar set tank_bbar players
 

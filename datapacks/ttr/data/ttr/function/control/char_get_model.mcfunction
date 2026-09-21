@@ -10,8 +10,8 @@ function ttr:pellet/tanks_check_area
 #this isn't related to model stuff, but our collision zombie needs to run this at SOME point
 
 #find our model
-execute as @e[tag=player_model,type=armor_stand] if score @s playerID = #temp_id value run tag @s add my_model
-execute as @e[tag=player_model_head,type=armor_stand] if score @s playerID = #temp_id value run tag @s add my_model_2
+execute as @e[tag=player_model,type=item_display] if score @s playerID = #temp_id value run tag @s add my_model
+execute as @e[tag=player_model_head,type=item_display] if score @s playerID = #temp_id value run tag @s add my_model_2
 
 #model missing? spawn a new one
 execute unless entity @e[tag=my_model,type=armor_stand] run function ttr:control/summon_model
@@ -28,12 +28,8 @@ tp @e[limit=1,tag=my_model] ~ ~-1.2 ~
 scoreboard players set @e[limit=1,tag=my_model_2,type=armor_stand] lifespan 10
 #head teleport is handled elsewhere
 
-#correct direction by exploiting armor stand jank
-#--done because armor stands are very lazy when it comes to showing what direction they're truly facing
-#--this prevents the character model from getting stuck facing the wrong way visually
-#--(I say "prevent" but it doesn't work 100%...  it stops the visual error *most* of the time)
-execute if score #global dCorrect matches 1 as @e[limit=1,tag=my_model,type=armor_stand] at @s run tp @s ~ ~ ~ ~ 45
-execute if score #global dCorrect matches 4 as @e[limit=1,tag=my_model,type=armor_stand] at @s run tp @s ~ ~ ~ ~ -45
+#execute if score #global dCorrect matches 1 as @e[limit=1,tag=my_model,type=armor_stand] at @s run tp @s ~ ~ ~ ~ 45
+#execute if score #global dCorrect matches 4 as @e[limit=1,tag=my_model,type=armor_stand] at @s run tp @s ~ ~ ~ ~ -45
 
 #model is rotated to be in the proper direction
 execute if entity @s[scores={lastDirection=1}] unless score global oTimer matches 9 as @e[limit=1,tag=my_model,type=armor_stand] run data merge entity @s {Rotation:[0.0f,0.0f]}

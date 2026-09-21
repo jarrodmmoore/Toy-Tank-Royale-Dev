@@ -1,5 +1,5 @@
 #no crown
-execute as @e[limit=1,tag=gold_crown,type=armor_stand] at @s run tp @s 8 20 8 0 0
+execute as @e[limit=1,tag=gold_crown,type=item_display] at @s run tp @s 8 20 8 0 0
 
 #no coins
 kill @e[type=armor_stand,tag=coin]

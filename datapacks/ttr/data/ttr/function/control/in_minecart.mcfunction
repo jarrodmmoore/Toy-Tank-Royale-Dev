@@ -32,9 +32,9 @@ function ttr:game/hotbar/hotbar_main
 #tag the entities that belong to us
 
 #input_base
-#execute as @e[tag=input_base,type=armor_stand] if score @s playerID = #temporary playerID run tag @s add my_base
-#execute if entity @e[tag=my_base,tag=input_base,type=armor_stand,limit=1] as @e[limit=1,tag=input_base,type=armor_stand,tag=!my_base] if score @s playerID = #temporary playerID run function ttr:control/kill_input_base
-#execute unless entity @e[limit=1,tag=my_base,tag=input_base] as @e[tag=input_base,type=armor_stand] if score @s playerID = #temporary playerID run tag @s add my_base
+#execute as @e[tag=input_base,type=item_display] if score @s playerID = #temporary playerID run tag @s add my_base
+#execute if entity @e[tag=my_base,tag=input_base,type=item_display,limit=1] as @e[limit=1,tag=input_base,type=item_display,tag=!my_base] if score @s playerID = #temporary playerID run function ttr:control/kill_input_base
+#execute unless entity @e[limit=1,tag=my_base,tag=input_base] as @e[tag=input_base,type=item_display] if score @s playerID = #temporary playerID run tag @s add my_base
 #execute unless entity @e[limit=1,tag=my_base,type=armor_stand] run function ttr:control/catch_bad_input_stack
 ###################################
 

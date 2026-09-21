@@ -147,7 +147,7 @@ tag @s[tag=speedo] remove speedo
 
 #tank aim
 execute if entity @s[tag=validRotation,scores={deathTime=..0}] at 0000001e-0000-0000-0000-000000000001 run function ttr:control/node/30/movement/aim/main
-execute unless entity @s[tag=validRotation] at 0000001e-0000-0000-0000-000000000001 run tp 0000001e-0000-0000-0000-000000000003 ~ ~-1.2 ~
+execute unless entity @s[tag=validRotation] at 0000001e-0000-0000-0000-000000000001 run tp 0000001e-0000-0000-0000-000000000003 ~ ~0.5 ~
 
 #shoot pellets n stuff
 execute if entity @s[tag=validRotation,scores={carrotInput=1..,shootCooldown=..0}] at 0000001e-0000-0000-0000-000000000001 rotated as 0000001e-0000-0000-0000-000000000003 rotated ~ 0 positioned ~ ~-1 ~ run function ttr:shoot/_shoot_index

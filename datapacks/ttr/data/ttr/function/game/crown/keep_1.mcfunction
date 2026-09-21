@@ -24,5 +24,5 @@ execute if score #crown_pickup_cooldown value matches ..0 positioned ~ 30 ~ if e
 
 #must be a clear spot, otherwise move the crown again
 execute if score #crown_pickup_cooldown value matches ..0 if score #crown_keep_state value matches ..1 unless block ~ 30 ~ air run scoreboard players set #crown_keep_state value 0
-execute if score #crown_pickup_cooldown value matches ..0 if score #crown_keep_state value matches ..1 unless block ~ ~1 ~ air run scoreboard players set #crown_keep_state value 0
-execute if score #crown_pickup_cooldown value matches ..0 if score #crown_keep_state value matches ..1 if block ~ ~ ~ air run scoreboard players set #crown_keep_state value 0
+execute if score #crown_pickup_cooldown value matches ..0 if score #crown_keep_state value matches ..1 unless block ~ ~ ~ air run scoreboard players set #crown_keep_state value 0
+execute if score #crown_pickup_cooldown value matches ..0 if score #crown_keep_state value matches ..1 if block ~ ~-1 ~ #ttr:pellet_okay run scoreboard players set #crown_keep_state value 0

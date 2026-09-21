@@ -1,5 +1,5 @@
 #crown for leading player
-execute as @e[limit=1,tag=gold_crown,type=armor_stand] at @s run function ttr:game/crown/_crown_main_keep
+execute as @e[limit=1,tag=gold_crown,type=item_display] at @s run function ttr:game/crown/_crown_main_keep
 
 #points happen once per second
 scoreboard players add #crownPointTime value 1

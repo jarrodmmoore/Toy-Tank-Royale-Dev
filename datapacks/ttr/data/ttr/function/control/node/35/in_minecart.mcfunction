@@ -4,9 +4,9 @@
 #tag the entities that belong to us
 
 #input_base
-#execute as @e[tag=input_base,type=armor_stand] if score @s playerID = #temporary playerID run tag @s add my_base
-#execute if entity 00000023-0000-0000-0000-000000000004 as @e[limit=1,tag=input_base,type=armor_stand,tag=!my_base] if score @s playerID = #temporary playerID run function ttr:control/kill_input_base
-#execute unless entity @e[limit=1,tag=my_base,tag=input_base] as @e[tag=input_base,type=armor_stand] if score @s playerID = #temporary playerID run tag @s add my_base
+#execute as @e[tag=input_base,type=item_display] if score @s playerID = #temporary playerID run tag @s add my_base
+#execute if entity 00000023-0000-0000-0000-000000000004 as @e[limit=1,tag=input_base,type=item_display,tag=!my_base] if score @s playerID = #temporary playerID run function ttr:control/kill_input_base
+#execute unless entity @e[limit=1,tag=my_base,tag=input_base] as @e[tag=input_base,type=item_display] if score @s playerID = #temporary playerID run tag @s add my_base
 execute unless entity 00000023-0000-0000-0000-000000000004 run function ttr:control/catch_bad_input_stack
 
 ###################################

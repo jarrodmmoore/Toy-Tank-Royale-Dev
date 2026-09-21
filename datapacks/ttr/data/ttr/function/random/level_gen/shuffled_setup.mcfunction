@@ -1,6 +1,6 @@
 #make sure crown exists
-kill @e[tag=gold_crown,type=armor_stand]
-summon armor_stand 16 20 16 {Tags:["gold_crown"],Small:1b,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,DisabledSlots:4144959,equipment:{head:{id:"minecraft:carved_pumpkin",count:1,components:{"minecraft:item_model":"ttr/pickups/crown"}}}}
+kill @e[tag=gold_crown,type=item_display]
+summon item_display 16 20 16 {interpolation_duration:1,teleport_duration:2,Tags:["gold_crown"],item:{id:"minecraft:carved_pumpkin",count:1,components:{"minecraft:item_model":"ttr/pickups/crown"}},transformation:{translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],scale:[0.75f,0.75f,0.75f],right_rotation:[0f,0f,0f,1f]}}
 
 #scoreboard players set #area_1_active value 0
 #scoreboard players set #area_2_active value 0

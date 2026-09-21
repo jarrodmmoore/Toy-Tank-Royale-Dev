@@ -10,7 +10,7 @@ scoreboard players set #opt_teamlayout value 0
 scoreboard players set #opt_allow_coins value 1
 scoreboard players set #opt_permadeath value 0
 
-tag @e[tag=gold_crown,type=armor_stand] remove priorityTarget
+tag @e[tag=gold_crown,type=item_display] remove priorityTarget
 
 scoreboard players reset * coins
 scoreboard players reset * aiCoins

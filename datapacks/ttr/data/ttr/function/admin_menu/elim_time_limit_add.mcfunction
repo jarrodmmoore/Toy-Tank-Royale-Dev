@@ -6,4 +6,4 @@ execute if entity @s[scores={optSelect=2702}] run scoreboard players add #opt_el
 #update display n stuff..
 execute if score #opt_gamemode value matches 4 run function ttr:gamemodes/4_setup
 
-function ttr:admin_menu/_open
+function ttr:admin_menu/__open

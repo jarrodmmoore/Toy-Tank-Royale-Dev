@@ -10,4 +10,4 @@
 #execute if score @s controlAnimate matches 9 run tp @e[tag=my_base,type=armor_stand,limit=1] ~ ~8 ~12
 #execute if score @s controlAnimate matches 10.. run tp @e[tag=my_base,type=armor_stand,limit=1] ~ ~8 ~10
 
-tp 0000003e-0000-0000-0000-000000000004 ~ ~ ~
+tp 0000003e-0000-0000-0000-000000000004 ~ ~1 ~

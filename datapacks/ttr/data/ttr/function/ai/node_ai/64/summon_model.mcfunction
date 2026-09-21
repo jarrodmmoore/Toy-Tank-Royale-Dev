@@ -7,7 +7,7 @@ scoreboard players operation @s tankHeadModel = #headModel value
 kill 00000040-0000-0001-0000-000000000002
 
 #summon model
-summon minecraft:armor_stand ~ ~-1 ~ {UUID:[I;64,1,0,2],Tags:["player_model"],Rotation:[0.0f,0.0f],DisabledSlots:4144959,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Glowing:0b}
+summon item_display ~ ~-1 ~ {interpolation_duration:1,teleport_duration:2,UUID:[I;64,1,0,2],Tags:["player_model"]}
 execute as 00000040-0000-0001-0000-000000000002 run function ttr:control/body_get_model
 
 scoreboard players operation 00000040-0000-0001-0000-000000000002 playerID = @s playerID

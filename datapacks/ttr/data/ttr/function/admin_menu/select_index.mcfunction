@@ -72,7 +72,7 @@ execute if entity @s[scores={optSelect=1201}] run function ttr:admin_menu/restor
 
 
 #re-open first menu
-execute if entity @s[scores={optSelect=2002}] run function ttr:admin_menu/_open
+execute if entity @s[scores={optSelect=2002}] run function ttr:admin_menu/__open
 
 #open the ai menu
 execute if entity @s[scores={optSelect=2003}] run function ttr:admin_menu/_open_advanced

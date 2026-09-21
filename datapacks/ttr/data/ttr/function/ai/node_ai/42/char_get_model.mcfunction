@@ -24,16 +24,13 @@ execute unless score global oTimer matches 9 as 0000002a-0000-0001-0000-00000000
 
 #come, tp to me
 scoreboard players set 0000002a-0000-0001-0000-000000000002 lifespan 10
-execute as 0000002a-0000-0001-0000-000000000002 rotated as @s run tp @s ~ ~-1.2 ~ ~ ~
+execute as 0000002a-0000-0001-0000-000000000002 rotated as @s run tp @s ~ ~0.5 ~ ~ 0
+#head is temporary
 scoreboard players set 0000002a-0000-0001-0000-000000000003 lifespan 10
 #head teleport is handled elsewhere
 
-#correct direction by exploiting armor stand jank
-#--done because armor stands are very lazy when it comes to showing what direction they're truly facing
-#--this prevents the character model from getting stuck facing the wrong way visually
-#--(I say "prevent" but it doesn't work 100%...  it stops the visual error *most* of the time)
-execute if score #global dCorrect matches 1 as 0000002a-0000-0001-0000-000000000002 at @s run tp @s ~ ~ ~ ~ 45
-execute if score #global dCorrect matches 4 as 0000002a-0000-0001-0000-000000000002 at @s run tp @s ~ ~ ~ ~ -45
+#execute if score #global dCorrect matches 1 as 0000002a-0000-0001-0000-000000000002 at @s run tp @s ~ ~ ~ ~ 45
+#execute if score #global dCorrect matches 4 as 0000002a-0000-0001-0000-000000000002 at @s run tp @s ~ ~ ~ ~ -45
 
 #model is rotated to be in the proper direction
 #execute if entity @s[scores={lastDirection=1}] unless score global oTimer matches 9 as 0000002a-0000-0001-0000-000000000002 run data merge entity @s {Rotation:[0.0f,0.0f]}

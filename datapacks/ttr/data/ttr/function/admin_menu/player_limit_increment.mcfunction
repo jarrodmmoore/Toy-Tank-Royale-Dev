@@ -4,4 +4,4 @@ execute if score #opt_playerlimit value matches ..63 at @s run playsound block.n
 scoreboard players add #opt_playerlimit value 1
 execute if score #opt_playerlimit value matches 65.. run scoreboard players set #opt_playerlimit value 64
 
-function ttr:admin_menu/_open
+function ttr:admin_menu/__open

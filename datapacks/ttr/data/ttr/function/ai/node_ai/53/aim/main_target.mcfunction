@@ -12,8 +12,8 @@ execute if entity @s[scores={aiRandomOffsetT=..0}] run function ttr:ai/aim/get_r
 #execute if entity @s[tag=!first_person] at @s rotated as @s positioned ~ ~1 ~ positioned ^ ^ ^5 run function ttr:movement/aim/raycast/check
 execute at @e[limit=1,sort=nearest,tag=ai_target] run function ttr:ai/aim/aim_offset_x
 
-execute if entity @s[scores={aiDelayAim=..0}] run tp 00000035-0000-0001-0000-000000000003 ~ ~-1.2 ~ facing entity 000001a4-0000-0000-0000-000000000045 eyes
-execute if entity @s[scores={aiDelayAim=1..}] run tp 00000035-0000-0001-0000-000000000003 ~ ~-1.2 ~
+execute if entity @s[scores={aiDelayAim=..0}] facing entity 000001a4-0000-0000-0000-000000000045 eyes rotated ~ 0 run tp 00000035-0000-0001-0000-000000000003 ~ ~0.5 ~ ~ ~
+execute if entity @s[scores={aiDelayAim=1..}] run tp 00000035-0000-0001-0000-000000000003 ~ ~0.5 ~
 
 #scoreboard players set #recursions value 8
 #execute rotated as 00000035-0000-0001-0000-000000000003 rotated ~ 0 positioned ~ ~.5 ~ run function ttr:movement/aim/show_aim

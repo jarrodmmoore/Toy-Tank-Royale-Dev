@@ -4,4 +4,4 @@ execute if entity @s[scores={optSelect=2503}] run scoreboard players set #opt_po
 execute if entity @s[scores={optSelect=2504}] run scoreboard players set #opt_pointdecay value 4
 execute at @s run playsound block.note_block.hat master @s
 
-function ttr:admin_menu/_open
+function ttr:admin_menu/__open

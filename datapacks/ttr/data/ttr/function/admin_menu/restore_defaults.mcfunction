@@ -27,7 +27,7 @@ scoreboard players set #opt_permadeath value 0
 scoreboard players set #opt_teamlayout value 0
 scoreboard players set #opt_capturelimit value 3
 scoreboard players set #opt_allow_coins value 1
-tag @e[tag=gold_crown,type=armor_stand] remove priorityTarget
+tag @e[tag=gold_crown,type=item_display] remove priorityTarget
 bossbar set tank_bbar players
 
 #make sure scores exist
@@ -56,4 +56,4 @@ clear @a[tag=!inControl] yellow_dye
 scoreboard players set #show_sidebar value 1
 scoreboard players set #sidebar_update value 99
 
-execute if entity @s[type=player] run function ttr:admin_menu/_open
+execute if entity @s[type=player] run function ttr:admin_menu/__open

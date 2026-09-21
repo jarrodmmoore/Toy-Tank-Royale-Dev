@@ -12,4 +12,4 @@ execute if score #opt_gamemode value matches 3 run function ttr:gamemodes/3_setu
 #wait 3 seconds before we can declare a winner
 scoreboard players set #objective_check_delay value 60
 
-function ttr:admin_menu/_open
+function ttr:admin_menu/__open

@@ -6,4 +6,4 @@ execute if score #opt_hitpoints value matches ..0 run scoreboard players set #op
 
 scoreboard players add #medkit_cooldown value 0
 
-function ttr:admin_menu/_open
+function ttr:admin_menu/__open
