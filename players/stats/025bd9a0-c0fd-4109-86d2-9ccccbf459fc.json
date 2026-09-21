@@ -1,0 +1,21 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:carrot_on_a_stick": 158,
+      "minecraft:written_book": 1
+    },
+    "minecraft:custom": {
+      "minecraft:minecart_one_cm": 99,
+      "minecraft:sprint_one_cm": 2618,
+      "minecraft:time_since_rest": 5338,
+      "minecraft:walk_one_cm": 4647,
+      "minecraft:total_world_time": 5704,
+      "minecraft:leave_game": 2,
+      "minecraft:crouch_one_cm": 38,
+      "minecraft:sneak_time": 20,
+      "minecraft:play_time": 5338,
+      "minecraft:time_since_death": 5338
+    }
+  },
+  "DataVersion": 5023
+}
