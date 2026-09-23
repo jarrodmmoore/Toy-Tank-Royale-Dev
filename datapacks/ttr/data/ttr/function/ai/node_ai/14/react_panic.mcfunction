@@ -8,7 +8,7 @@ execute as @e[limit=1,sort=nearest,distance=1..2,tag=panic_focus,tag=!player_cha
 execute as @e[limit=1,sort=nearest,distance=2..3,tag=panic_focus,tag=!player_char] at @s rotated ~ 0 positioned ^ ^ ^1.5 run summon marker ~ ~ ~ {UUID:[I;66,66,66,66],Tags:["panic_projection"]}
 execute as @e[limit=1,sort=nearest,distance=3..,tag=panic_focus,tag=!player_char] at @s rotated ~ 0 positioned ^ ^ ^2 run summon marker ~ ~ ~ {UUID:[I;66,66,66,66],Tags:["panic_projection"]}
 execute as @e[limit=1,sort=nearest,tag=panic_focus,tag=player_char] at @s rotated ~ 0 positioned ^ ^ ^ run summon marker ~ ~ ~ {UUID:[I;66,66,66,66],Tags:["panic_projection"]}
-tp 0000000e-0000-0001-0000-000000000003 ~ ~0.5 ~ facing entity 00000042-0000-0042-0000-004200000042 eyes
+execute facing entity 00000042-0000-0042-0000-004200000042 eyes rotated ~ 0 run tp 0000000e-0000-0001-0000-000000000003 ~ ~0.5 ~ ~ ~
 scoreboard players set @s aiDelayAim 10
 kill 00000042-0000-0042-0000-004200000042
 tag @e[tag=panic_focus] remove panic_focus

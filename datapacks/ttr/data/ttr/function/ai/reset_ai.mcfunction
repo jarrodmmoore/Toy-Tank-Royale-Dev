@@ -33,7 +33,7 @@ scoreboard players operation @s hitpoints = #opt_hitpoints value
 scoreboard players set @s[scores={hitpoints=..0}] hitpoints 1
 
 kill @e[limit=1,tag=my_model,type=armor_stand]
-kill @e[limit=1,tag=my_model_2,type=armor_stand]
+kill @e[limit=1,tag=my_model_2,type=item_display]
 
 scoreboard players set @s aiLogic 0
 scoreboard players set @s aiTargetDir 0

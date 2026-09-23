@@ -1,4 +1,4 @@
-tp @s ~ 29.3 ~
+tp @s ~ 30.6 ~
 
 #we proceed to phase 2
 scoreboard players set #crown_pickup_cooldown value 14

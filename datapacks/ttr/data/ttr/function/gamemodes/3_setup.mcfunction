@@ -13,4 +13,6 @@ scoreboard players set @e[tag=ai] aiPoints 0
 
 bossbar set tank_bbar name ["",{translate:"ttr.playing_to_x",bold:true,with:[{score:{name:"#opt_scorelimit",objective:"value"}}]}]
 
+execute as @e[type=item_display,tag=gold_crown] run data modify entity @s Glowing set value false
+
 scoreboard players set #celebration_time value 0

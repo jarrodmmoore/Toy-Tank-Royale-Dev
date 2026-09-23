@@ -17,6 +17,11 @@ execute if entity @s[tag=redTeam] if score #look_roll value matches 4 run tag @e
 execute if entity @s[tag=blueTeam] if score #look_roll value matches 1..3 run tag @e[limit=1,sort=nearest,tag=player_char,tag=!blueTeam,tag=!player_ded,tag=!self101,type=zombie,distance=..24] add checkLOS
 execute if entity @s[tag=blueTeam] if score #look_roll value matches 4 run tag @e[limit=1,sort=random,tag=player_char,tag=!blueTeam,tag=!player_ded,tag=!self101,type=zombie,distance=..15] add checkLOS
 
+#keep the crown: if we're not the leader AND we're not chaotic lv.5 AND someone is holding the crown, don't check LOS to players that aren't holding the crown
+execute if score #opt_gamemode value matches 2 \
+    unless score @s playerID = #royal_ID value unless entity @s[tag=!ai_want_objective,scores={aiChaotic=5..,aiAggression=4..}] \
+    as @e[tag=checkLOS,type=zombie,distance=..24] unless score @s playerID = #royal_ID value run tag @s remove checkLOS
+
 #check for line of sight to the enemy (if it exists)
 scoreboard players set #checkLOS value 0
 execute as @e[limit=1,tag=checkLOS,type=zombie,distance=..24] facing entity @s eyes rotated ~ 0 run function ttr:ai/movement/check_los/_go_2

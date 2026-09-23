@@ -8,4 +8,6 @@ bossbar set tank_bbar players
 
 bossbar set tank_bbar name ["",{translate:"ttr.get_coins_to_win",bold:true,with:[{score:{name:"#opt_coinlimit",objective:"value"}}]}]
 
+execute as @e[type=item_display,tag=gold_crown] run data modify entity @s Glowing set value false
+
 scoreboard players set #celebration_time value 0

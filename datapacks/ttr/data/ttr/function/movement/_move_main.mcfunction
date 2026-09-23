@@ -154,7 +154,7 @@ execute if entity @s[tag=validRotation,scores={deathTime=..0}] at @e[tag=my_char
 execute unless entity @s[tag=validRotation] at @e[tag=my_char,limit=1] run tp @e[limit=1,tag=my_model_2] ~ ~-1.2 ~
 
 #shoot pellets n stuff
-execute if entity @s[tag=validRotation,scores={carrotInput=1..,shootCooldown=..0}] at @e[tag=my_char,limit=1] rotated as @e[limit=1,tag=my_model_2,type=armor_stand] rotated ~ 0 positioned ~ ~-1 ~ run function ttr:shoot/_shoot_index
+execute if entity @s[tag=validRotation,scores={carrotInput=1..,shootCooldown=..0}] at @e[tag=my_char,limit=1] rotated as @e[limit=1,tag=my_model_2,type=item_display] rotated ~ 0 positioned ~ ~-1 ~ run function ttr:shoot/_shoot_index
 
 #last direction stored on my_char
 scoreboard players operation @e[limit=1,tag=my_char] lastDirection = @s lastDirection

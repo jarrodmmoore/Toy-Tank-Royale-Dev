@@ -103,12 +103,12 @@ tag @s[tag=speedo] remove speedo
 
 #react if something scary happens up close to us
 scoreboard players remove @s aiReactTime 1
-execute if score @s aiReactTime matches ..0 at @e[limit=1,sort=nearest,tag=my_model_2,type=armor_stand] run function ttr:ai/react_nearby_try
+execute if score @s aiReactTime matches ..0 at @e[limit=1,sort=nearest,tag=my_model_2,type=item_display] run function ttr:ai/react_nearby_try
 
 #shoot pellets n stuff
 function ttr:ai/shoot_cooldown
 scoreboard players remove @s aiThinkCooldown 1
-execute if score @s shootCooldown matches ..0 rotated as @e[limit=1,sort=nearest,tag=my_model_2,type=armor_stand] rotated ~ 0 positioned ~ ~-1 ~ run function ttr:ai/shoot/think
+execute if score @s shootCooldown matches ..0 rotated as @e[limit=1,sort=nearest,tag=my_model_2,type=item_display] rotated ~ 0 positioned ~ ~-1 ~ run function ttr:ai/shoot/think
 
 #tank aim
 execute if score @s aiLookID matches 1.. run function ttr:ai/aim/main_target

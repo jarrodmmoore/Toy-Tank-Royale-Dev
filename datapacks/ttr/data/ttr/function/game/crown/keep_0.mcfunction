@@ -3,7 +3,7 @@ scoreboard players set #last_royal value 0
 #tag @e[tag=keepCrownHolder] remove keepCrownHolder
 
 tag @s[tag=priorityTarget] remove priorityTarget
-effect clear @s minecraft:glowing
+data modify entity @s Glowing set value false
 
 #hide underground if no arena exists
 execute if score #active_areas value matches ..0 run tp @s 8 20 8 0 0

@@ -3,7 +3,6 @@ scoreboard players add #royal_ID value 0
 
 scoreboard players set #crown_check value 0
 
-effect clear @s minecraft:glowing
 
 #check if there's a player who has the royal_ID
 execute as @e[tag=player_char,type=zombie,tag=!player_ded] if score @s playerID = #royal_ID value run scoreboard players set #crown_check value 1

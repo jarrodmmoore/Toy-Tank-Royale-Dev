@@ -3,7 +3,7 @@ scoreboard players set #last_royal value 0
 #tag @e[tag=keepCrownHolder] remove keepCrownHolder
 
 #COME GET MEE
-effect give @s minecraft:glowing 1 0 true
+data modify entity @s Glowing set value true
 team join color_yellow @s
 
 #crown becomes tangible after a second of doing animations n stuff
@@ -14,7 +14,7 @@ execute if score #crown_pickup_cooldown value matches 15 run tp @s ~ ~1 ~
 execute if score #crown_pickup_cooldown value matches ..5 run tp @s ~ ~ ~ ~3.35 0
 
 #particles! come pick me up, you fools
-execute if score #crown_pickup_cooldown value matches ..0 run particle totem_of_undying ~ ~1 ~ 0 0 0 .4 1 force @a
+execute if score #crown_pickup_cooldown value matches ..0 run particle totem_of_undying ~ ~ ~ 0 0 0 .4 1 force @a
 
 
 #PICK-UP DETECTION

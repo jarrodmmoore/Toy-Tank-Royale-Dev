@@ -19,7 +19,7 @@ execute as @e[tag=my_char] at @s run function ttr:random/find_spawnpoint
 tag @e[tag=my_char] remove player_ded
 
 kill @e[limit=1,tag=my_model,type=armor_stand]
-kill @e[limit=1,tag=my_model_2,type=armor_stand]
+kill @e[limit=1,tag=my_model_2,type=item_display]
 
 #back to max hitpoints
 scoreboard players add @s hitpoints 0

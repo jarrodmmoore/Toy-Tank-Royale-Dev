@@ -1,22 +1,29 @@
 {
   "stats": {
     "minecraft:used": {
-      "minecraft:carrot_on_a_stick": 580,
-      "minecraft:written_book": 3
+      "minecraft:carrot_on_a_stick": 1720,
+      "minecraft:written_book": 9
+    },
+    "minecraft:dropped": {
+      "minecraft:white_dye": 1,
+      "minecraft:yellow_dye": 1
     },
     "minecraft:custom": {
       "minecraft:minecart_one_cm": 99,
-      "minecraft:damage_resisted": 50,
-      "minecraft:sprint_one_cm": 3503,
-      "minecraft:time_since_rest": 82828,
-      "minecraft:fall_one_cm": 42758,
-      "minecraft:walk_one_cm": 29350,
-      "minecraft:total_world_time": 151810,
-      "minecraft:leave_game": 3,
-      "minecraft:crouch_one_cm": 44,
-      "minecraft:sneak_time": 52,
-      "minecraft:play_time": 82828,
-      "minecraft:time_since_death": 82828
+      "minecraft:damage_resisted": 160,
+      "minecraft:time_since_rest": 158940,
+      "minecraft:walk_one_cm": 116555,
+      "minecraft:leave_game": 4,
+      "minecraft:play_time": 158940,
+      "minecraft:jump": 8,
+      "minecraft:time_since_death": 158940,
+      "minecraft:drop": 2,
+      "minecraft:sprint_one_cm": 20450,
+      "minecraft:fall_one_cm": 139707,
+      "minecraft:total_world_time": 362003,
+      "minecraft:fly_one_cm": 52169,
+      "minecraft:crouch_one_cm": 53,
+      "minecraft:sneak_time": 229
     }
   },
   "DataVersion": 5023

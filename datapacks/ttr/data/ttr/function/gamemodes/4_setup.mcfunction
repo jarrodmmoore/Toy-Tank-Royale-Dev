@@ -30,4 +30,6 @@ execute if score #force_turtles value matches 1 run team modify sidebar_red pref
 
 scoreboard players set #opt_permadeath value 0
 
+execute as @e[type=item_display,tag=gold_crown] run data modify entity @s Glowing set value false
+
 bossbar set tank_bbar name ["",{translate:"ttr.game_starting_soon",bold:true}]

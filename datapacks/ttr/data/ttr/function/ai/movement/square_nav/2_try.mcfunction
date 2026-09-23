@@ -6,7 +6,7 @@ execute if score @s aiAggression matches 5.. run scoreboard players remove @s ai
 function ttr:ai/movement/square_nav/generate_move_targets
 
 #if not going for crown, we should probably wait a bit longer
-execute if score #decision value matches 1 if score @s aiSquareTime2 matches ..2 run scoreboard players set #decision value 0
+execute if score #decision value matches 1 if score @s aiSquareTime2 matches ..1 run scoreboard players set #decision value 0
 
 #crowned player in the same square? don't leave it, then.
 scoreboard players set #objectiveSquare value 0

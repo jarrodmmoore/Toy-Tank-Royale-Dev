@@ -15,7 +15,7 @@ execute as @e[tag=player_model_head,type=item_display] if score @s playerID = #t
 
 #model missing? spawn a new one
 execute unless entity @e[tag=my_model,type=armor_stand] run function ttr:control/summon_model
-execute unless score @s deathTime matches 1.. unless entity @e[tag=my_model_2,type=armor_stand] run function ttr:control/summon_model_head
+execute unless score @s deathTime matches 1.. unless entity @e[tag=my_model_2,type=item_display] run function ttr:control/summon_model_head
 
 #note: char_direction is important
 
@@ -25,7 +25,7 @@ execute unless entity @s[scores={left_right=0,up_down=0}] unless score global oT
 #come, tp to me
 scoreboard players set @e[limit=1,tag=my_model,type=armor_stand] lifespan 10
 tp @e[limit=1,tag=my_model] ~ ~-1.2 ~
-scoreboard players set @e[limit=1,tag=my_model_2,type=armor_stand] lifespan 10
+scoreboard players set @e[limit=1,tag=my_model_2,type=item_display] lifespan 10
 #head teleport is handled elsewhere
 
 #execute if score #global dCorrect matches 1 as @e[limit=1,tag=my_model,type=armor_stand] at @s run tp @s ~ ~ ~ ~ 45

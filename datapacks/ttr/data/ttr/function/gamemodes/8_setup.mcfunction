@@ -31,6 +31,8 @@ scoreboard players set #opt_permadeath value 0
 
 bossbar set tank_bbar name ["",{translate:"ttr.game_starting_soon",bold:true}]
 
+execute as @e[type=item_display,tag=gold_crown] run data modify entity @s Glowing set value false
+
 #set up the arena
 execute as @a[tag=inControl] run function ttr:game/abandon_game
 execute if entity @e[tag=ai] run function ttr:ai/_ai_remove_all

@@ -52,6 +52,8 @@ execute at @s run playsound minecraft:entity.generic.burn master @s ~ ~ ~ 1 2
 clear @a written_book
 clear @a[tag=!inControl] yellow_dye
 
+execute as @e[type=item_display,tag=gold_crown] run data modify entity @s Glowing set value false
+
 #scoreboard objectives setdisplay sidebar coins
 scoreboard players set #show_sidebar value 1
 scoreboard players set #sidebar_update value 99

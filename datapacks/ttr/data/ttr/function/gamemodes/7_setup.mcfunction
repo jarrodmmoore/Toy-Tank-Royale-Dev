@@ -26,6 +26,8 @@ team modify sidebar_blue prefix ["",{translate:"ttr.game.alive",color:"blue"}]
 
 bossbar set tank_bbar name ["",{translate:"ttr.game_starting_soon",bold:true}]
 
+execute as @e[type=item_display,tag=gold_crown] run data modify entity @s Glowing set value false
+
 #all will respawn!
 scoreboard players set @a[tag=inControl] deathTime 1
 tag @a[tag=inControl] add force_respawn

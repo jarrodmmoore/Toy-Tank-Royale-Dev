@@ -16,12 +16,12 @@ execute positioned ~-.5 ~.5 ~.5 if block ~ ~ ~ #ttr:breakable run setblock ~ ~ ~
 #playsound minecraft:entity.generic.burn master @a[distance=..60] ~ ~10 ~ .5 .1 .2
 
 #flashy after images! sweet
-execute unless score #force_turtles value matches 1 run summon minecraft:armor_stand ~ ~-2 ~ {Tags:["after_image_body","set_image"],Rotation:[0.0f,0.0f],DisabledSlots:4144959,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Glowing:0b,equipment:{head:{id:"minecraft:yellow_dye",count:1,components:{"minecraft:item_model":"ttr/tanks/ghost_body"}}}}
-execute unless score #force_turtles value matches 1 run summon minecraft:armor_stand ~ ~-2 ~ {Tags:["after_image_head","set_image"],Rotation:[0.0f,0.0f],DisabledSlots:4144959,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Glowing:0b,equipment:{head:{id:"minecraft:green_dye",count:1,components:{"minecraft:item_model":"ttr/tanks/ghost_head"}}}}
-execute if score #force_turtles value matches 1 run summon minecraft:armor_stand ~ ~-2 ~ {Tags:["after_image_body","set_image"],Rotation:[0.0f,0.0f],DisabledSlots:4144959,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Glowing:0b,equipment:{head:{id:"minecraft:yellow_dye",count:1,components:{"minecraft:item_model":"ttr/turtles/ghost_body"}}}}
-execute if score #force_turtles value matches 1 run summon minecraft:armor_stand ~ ~-2 ~ {Tags:["after_image_head","set_image"],Rotation:[0.0f,0.0f],DisabledSlots:4144959,NoGravity:1b,Silent:1b,Invulnerable:1b,Invisible:1b,Glowing:0b,equipment:{head:{id:"minecraft:green_dye",count:1,components:{"minecraft:item_model":"ttr/turtles/ghost_head"}}}}
+execute unless score #force_turtles value matches 1 run summon item_display ~ ~-2 ~ {teleport_duration:2,Tags:["after_image_body","set_image"],item:{id:"minecraft:yellow_dye",count:1,components:{"minecraft:item_model":"ttr/tanks/ghost_body"}}}
+execute unless score #force_turtles value matches 1 run summon item_display ~ ~-2 ~ {teleport_duration:2,Tags:["after_image_head","set_image"],item:{id:"minecraft:green_dye",count:1,components:{"minecraft:item_model":"ttr/tanks/ghost_head"}}}
+execute if score #force_turtles value matches 1 run summon item_display ~ ~-2 ~ {teleport_duration:2,Tags:["after_image_body","set_image"],item:{id:"minecraft:yellow_dye",count:1,components:{"minecraft:item_model":"ttr/turtles/ghost_body"}}}
+execute if score #force_turtles value matches 1 run summon item_display ~ ~-2 ~ {teleport_duration:2,Tags:["after_image_head","set_image"],item:{id:"minecraft:green_dye",count:1,components:{"minecraft:item_model":"ttr/turtles/ghost_head"}}}
 
-execute as @e[limit=1,sort=nearest,tag=set_image,tag=after_image_body,type=armor_stand] at 00000021-0000-0000-0000-000000000002 run tp @s ~ ~-.1 ~ ~ ~
-execute as @e[limit=1,sort=nearest,tag=set_image,tag=after_image_head,type=armor_stand] at 00000021-0000-0000-0000-000000000003 run tp @s ~ ~-.1 ~ ~ ~
-scoreboard players set @e[limit=2,sort=nearest,tag=set_image] lifespan 11
-tag @e[limit=2,sort=nearest,tag=set_image] remove set_image
+execute as @e[limit=1,sort=nearest,tag=set_image,tag=after_image_body,type=item_display,distance=..3] at 00000021-0000-0000-0000-000000000002 run tp @s ~ ~-.1 ~ ~ ~
+execute as @e[limit=1,sort=nearest,tag=set_image,tag=after_image_head,type=item_display,distance=..3] at 00000021-0000-0000-0000-000000000003 run tp @s ~ ~-.1 ~ ~ ~
+scoreboard players set @e[limit=2,sort=nearest,tag=set_image,type=item_display,distance=..5] lifespan 11
+tag @e[limit=2,sort=nearest,tag=set_image,type=item_display,distance=..5] remove set_image

@@ -22,4 +22,6 @@ team join sidebar_blue §§
 team modify sidebar_red prefix ["",{translate:"ttr.red_team",color:"red"}]
 team modify sidebar_blue prefix ["",{translate:"ttr.blue_team",color:"blue"}]
 
+execute as @e[type=item_display,tag=gold_crown] run data modify entity @s Glowing set value false
+
 scoreboard players set #celebration_time value 0
